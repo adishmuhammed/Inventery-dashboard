@@ -5,8 +5,7 @@
             <div class="row">
                 <div class="col col-md-4 col-sm-6">
                     <div class="widget about-widget">
-                        <div class="footer-logo"><img
-                                src="{{ asset('/public/assets/images/footer-logo.png') }}" alt></div>
+                        <div class="footer-logo"><img src="{{ asset('assets/images/footer-logo.png') }}" alt></div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                             exercitation</p>

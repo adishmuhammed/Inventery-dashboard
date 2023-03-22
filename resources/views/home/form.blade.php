@@ -6,9 +6,9 @@
             </div>
             <div class="col col-md-6">
                 <div class="section-title-s4">
-                    <h2>Request a call back</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incidi
-                        dunt ut labore et dolore magna aliqua.</p>
+                    <h2>Become a volunteer</h2>
+                    <p>If you are interested in volunteering at Sahayi Dialysis Center, please fill out the online
+                        application form</p>
                 </div>
                 <div class="contact-form">
                     <form method="post" id="contact-form" class="form row contact-validation-active">
@@ -25,7 +25,7 @@
                             <input type="text" class="form-control" id="phone" name="phone">
                         </div>
                         <div class="col col-sm-6">
-                            <label for="business">Business Type</label>
+                            <label for="business">Become a volunteer in</label>
                             <select name="business" id="business" class="form-control">
                                 <option selected disabled>Select one</option>
                                 <option>Select number 1</option>

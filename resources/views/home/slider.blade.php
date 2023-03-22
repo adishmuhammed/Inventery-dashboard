@@ -1,7 +1,7 @@
 <section class="hero hero-style-3 hero-slider-wrapper">
     <div class="hero-slider">
         <div class="slide">
-            <img src="{{ asset('/public/assets/images/slider/slide-4.jpg') }}" alt class="slider-bg">
+            <img src="{{ asset('assets/images/slider/slide-4.jpg') }}" alt class="slider-bg">
             <div class="container">
                 <div class="row">
                     <div class="col col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 slide-caption">
@@ -16,7 +16,7 @@
         </div>
 
         <div class="slide">
-            <img src="{{ asset('/public/assets/images/slider/slide-3.jpg') }}" alt class="slider-bg">
+            <img src="{{ asset('assets/images/slider/slide-3.jpg') }}" alt class="slider-bg">
             <div class="container">
                 <div class="row">
                     <div class="col col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 slide-caption">
@@ -31,7 +31,7 @@
         </div>
 
         <div class="slide">
-            <img src="{{ asset('/public/assets/images/slider/slide-2.jpg') }}" alt class="slider-bg">
+            <img src="{{ asset('assets/images/slider/slide-2.jpg') }}" alt class="slider-bg">
             <div class="container">
                 <div class="row">
                     <div class="col col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 slide-caption">

@@ -5,22 +5,22 @@
             <div class="col col-xs-12">
                 <div class="partners-slider">
                     <div class="grid">
-                        <img src="{{ asset('/public/assets/images/partners/img-1.png') }}" alt>
+                        <img src="{{ asset('assets/images/partners/img-1.png') }}" alt>
                     </div>
                     <div class="grid">
-                        <img src="{{ asset('/public/assets/images/partners/img-2.png') }}" alt>
+                        <img src="{{ asset('assets/images/partners/img-2.png') }}" alt>
                     </div>
                     <div class="grid">
-                        <img src="{{ asset('/public/assets/images/partners/img-3.png') }}" alt>
+                        <img src="{{ asset('assets/images/partners/img-3.png') }}" alt>
                     </div>
                     <div class="grid">
-                        <img src="{{ asset('/public/assets/images/partners/img-4.png') }}" alt>
+                        <img src="{{ asset('assets/images/partners/img-4.png') }}" alt>
                     </div>
                     <div class="grid">
-                        <img src="{{ asset('/public/assets/images/partners/img-5.png') }}" alt>
+                        <img src="{{ asset('assets/images/partners/img-5.png') }}" alt>
                     </div>
                     <div class="grid">
-                        <img src="{{ asset('/public/assets/images/partners/img-3.png') }}" alt>
+                        <img src="{{ asset('assets/images/partners/img-3.png') }}" alt>
                     </div>
                 </div>
             </div>
