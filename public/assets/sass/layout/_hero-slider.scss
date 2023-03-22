@@ -1,0 +1,245 @@
+/*--------------------------------------------------------------
+#0.4	hero slider
+--------------------------------------------------------------*/
+.hero {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+
+	@include media-query(991px) {
+		min-height: 500px;
+	}
+
+	@include media-query(767px) {
+		min-height: 420px;
+	}
+
+	.slide {
+		height: 100vh;
+		position: relative;
+
+		@include media-query(991px) {
+			min-height: 500px;
+		}
+
+		@include media-query(767px) {
+			min-height: 420px;
+		}
+
+		background-repeat: no-repeat;
+		position: relative;
+
+		.slider-bg {
+			display: none;
+		}
+
+		&:before {
+			content: "";
+			@include overlay(transparentize($black, 0.6));
+		}
+	}
+
+	.slide:focus {
+		outline: none;
+	}
+
+	.slide .container {
+		height: 100%;
+		display: table;
+	}
+
+	.slide .row {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+
+	/** slider controls **/
+	.slick-prev,
+	.slick-next {
+		background-color: $white;
+		width: 50px;
+		height: 50px;
+		z-index: 9;
+		border-radius: 50%;
+		@inlcude transition-time(0.3s);
+
+		@include media-query(991px) {
+			display: none !important;
+		}
+
+		&:before {
+			color: $theme-primary-color;
+		}
+
+		&:hover {
+			background-color: $theme-primary-color;
+		}
+
+		&:hover:before {
+			color: $white;
+		}
+	}
+
+	.slick-prev {
+		left: 15px;
+
+		&:before {
+			font-family: "FontAwesome";
+			content: "\f104";
+			opacity: 1;
+		}
+	}
+
+	.slick-next {
+		right: 15px;
+
+		&:before {
+			font-family: "FontAwesome";
+			content: "\f105";
+			opacity: 1;
+		}
+	}
+
+	.slick-dots {
+		bottom: 20px;
+
+		@include widther(992px) {
+			display: none !important;
+		}
+
+		li {
+			margin: 0;
+		}
+
+		button {
+			background-color: $theme-secondary-color;
+			width: 15px;
+		    height: 15px;
+		    border: 2px solid $white;
+			border-radius: 50%;
+		}
+
+		button:before,
+		button:before {
+			display: none;
+		}
+	}
+
+	/*** hero slider animation ***/
+	.hero-slider .slide-caption > h2,
+	.hero-slider .slide-caption > p,
+	.hero-slider .slide-caption > .btns {
+		color: $white;
+		opacity: 0;
+	}
+
+	.hero-slider .slick-list .slick-current .slide-caption > h2 {
+		-webkit-animation: fadeInLeftSlow 1.5s 0.8s forwards;
+		-moz-animation: fadeInLeftSlow 1.5s 0.8s forwards;
+		-o-animation: fadeInLeftSlow 1.5s 0.8s forwards;
+		-ms-animation: fadeInLeftSlow 1.5s 0.8s forwards;
+		animation: fadeInLeftSlow 1.5s 0.8s forwards;
+	}
+
+	.hero-slider .slick-list .slick-current .slide-caption > p {
+		-webkit-animation: fadeInLeftSlow 1.5s 1.4s forwards;
+		-moz-animation: fadeInLeftSlow 1.5s 1.4s forwards;
+		-o-animation: fadeInLeftSlow 1.5s 1.4s forwards;
+		-ms-animation: fadeInLeftSlow 1.5s 1.4s forwards;
+		animation: fadeInLeftSlow 1.5s 1.4s forwards;
+	}
+
+	.hero-slider .slick-list .slick-current .slide-caption > .btns {
+		-webkit-animation: fadeInLeftSlow 1.5s 1.8s forwards;
+		-moz-animation: fadeInLeftSlow 1.5s 1.8s forwards;
+		-o-animation: fadeInLeftSlow 1.5s 1.8s forwards;
+		-ms-animation: fadeInLeftSlow 1.5s 1.8s forwards;
+		animation: fadeInLeftSlow 1.5s 1.8s forwards;
+	}
+}
+
+.hero-center {
+	text-align: center;
+}
+
+/************************************
+	hero style 1
+*************************************/
+.hero-style-1 {
+	.slide-caption h2 {
+		font-size: 60px;
+		font-size: calc-rem-value(60);
+		margin: 0 0 0.3em;
+
+		@include media-query(1199px) {
+			font-size: 50px;
+			font-size: calc-rem-value(50);
+		}
+
+		@include media-query(991px) {
+			font-size: 40px;
+			font-size: calc-rem-value(40);
+		}
+
+		@include media-query(767px) {
+			font-size: 30px;
+			font-size: calc-rem-value(30);
+		}
+	}
+
+	.slide-caption p {
+		font-size: 18px;
+		font-size: calc-rem-value(18);
+		margin: 0 0 2em;
+
+		@include media-query(767px) {
+			font-size: 15px;
+			font-size: calc-rem-value(15);
+		}
+	}
+}
+
+
+/************************************
+	hero style 2
+*************************************/
+.hero-style-2 {
+	@extend .hero-style-1;
+
+	height: 670px;
+
+	@include media-query(991px) {
+		height: 500px;
+	}
+
+	@include media-query(767px) {
+		height: 420px;
+	}
+
+	.slide {
+		height: 670px;
+		position: relative;
+
+		@include media-query(991px) {
+			height: 500px;
+		}
+
+		@include media-query(767px) {
+			height: 420px;
+		}
+	}
+}
+
+
+/************************************
+	hero style 3
+*************************************/
+.hero-style-3 {
+	@extend .hero-style-2;
+	text-align: center;
+
+	.slide-caption h2 {
+		margin-bottom: 0.7em;
+	}
+}

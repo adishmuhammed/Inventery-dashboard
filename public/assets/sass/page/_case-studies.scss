@@ -1,0 +1,77 @@
+/*--------------------------------------------------------------
+	#case studies page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#9.0	case-studies-section
+--------------------------------------------------------------*/
+.case-studies-pg .page-title {
+	@include background-style("../images/pg-title/img-4.jpg", center center, cover, no-repeat, local);
+}
+
+.case-studies-section {
+
+	.case-studies-grids > .col {
+		margin-bottom: 60px;
+
+		@include media-query(650px) {
+			width: 100%;
+			margin-bottom: 50px;
+		}
+	}
+
+	.grid .img-holder {
+		margin-bottom: 20px;
+	}
+
+	.grid h3 {
+		font-size: 24px;
+		font-size: calc-rem-value(24);
+		font-weight: 600;
+		line-height: 1.5em;
+		padding: 0 0 0.62em;
+		margin: 0 0 1.25em;
+		position: relative;
+
+		@include media-query(1199px) {
+			font-size: 20px;
+			font-size: calc-rem-value(20);
+		}
+
+		@include media-query(991px) {
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+		}
+
+		&:after {
+			content: "";
+			background-color: $theme-secondary-color;
+			width: 57px;
+			height: 3px;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+
+			@include media-query(991px) {
+				width: 40px;
+			}
+		}
+	}
+
+	.grid a {
+		font-family: $heading-font;
+		font-size: 16px;
+		font-size: calc-rem-value(16);
+		font-weight: 600;
+		color: $theme-primary-color;
+
+		@include media-query(1199px) {
+			font-size: 14px;
+			font-size: calc-rem-value(14);
+		}
+
+	}
+
+	.grid a:hover {
+		color: $theme-secondary-color;
+	}
+}

@@ -1,0 +1,331 @@
+/************************************
+	service grid
+**********************************/
+.service-grids {
+
+	.img-details-link {
+		margin-bottom: 30px;
+		position: relative;
+
+		@include media-query(991px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	.img-details-link:hover .details-link {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 1;
+	}
+
+	.img-details-link:hover .details-link a {
+		top: 50%;
+	}
+
+	.details-link {
+		background-color: transparentize($theme-primary-color, 0.2);
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		@include transition-time(0.3s);
+		-webkit-transform: scale(0.5, 0.5);
+		transform: scale(0.5, 0.5);
+		opacity: 0;
+	}
+
+	.details-link a {
+		background-color: $theme-secondary-color;
+		font-size: 20px;
+		font-size: calc-rem-value(20);
+		color: $theme-primary-color;
+		padding: 5px 10px;
+		border-radius: 5px;
+		position: absolute;
+		left: 50%;
+		top: 0%;
+		@include center-by-translating();
+		@include transition-time(0.3s);
+
+		@include media-query(1199px) {
+			font-size: 16px;
+			font-size: calc-rem-value(16);
+			padding: 5px 8px;
+		}
+	}
+
+	.service-details h3 {
+		font-size: 24px;
+		font-size: calc-rem-value(24);
+		font-weight: 600;
+		margin: 0 0 0.9em;
+		padding-bottom: 0.4em;
+		position: relative;
+
+		@include media-query(1199px) {
+			font-size: 20px;
+			font-size: calc-rem-value(20);
+		}
+
+		@include media-query(991px) {
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+		}
+
+		@include media-query(767px) {
+			font-size: 16px;
+			font-size: calc-rem-value(16);
+		}
+
+		&:after {
+			background-color: $theme-secondary-color;
+			content: "";
+			width: 27px;
+			height: 4px;
+			border-radius: 5px;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+		}
+	}
+
+	.service-details p {
+		margin-bottom: 0;
+	}
+}
+
+
+/*** services-s2-grids ***/
+.services-s2-grids {
+	.grid {
+		position: relative;
+	}
+
+	.grid .inner {
+		padding-left: 85px;
+
+		@include media-query(767px) {
+			padding-left: 65px;
+		}
+	}
+
+	.icon {
+		width: 85px;
+		height: 85px;
+		line-height: 85px;
+		text-align: center;
+		border: 2px solid $theme-secondary-color;
+		border-radius: 50%;
+		position: absolute;
+		left: 0;
+		top: 0;
+
+		@include media-query(1199px) {
+			width: 75px;
+			height: 75px;
+			line-height: 75px;
+		}
+
+		@include media-query(991px) {
+			left: 15px;
+		}
+
+		@include media-query(767px) {
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+		}
+	}
+
+	.icon .fi:before {
+		font-size: 45px;
+		font-size: calc-rem-value(45);
+		color: $theme-primary-color;
+
+		@include media-query(767px) {
+			font-size: 27px;
+			font-size: calc-rem-value(27);
+		}
+	}
+
+	.grid h3 {
+		font-size: 24px;
+		font-size: calc-rem-value(24);
+		margin: 0.3em 0 0.5em;
+
+		@include media-query(1199px) {
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+		}
+
+		@include media-query(767px) {
+			font-size: 16px;
+			font-size: calc-rem-value(16);
+			margin: 0.2em 0 0.5em;
+		}
+	}
+
+	.grid h3 a {
+		color: $theme-primary-color;
+	}
+
+	.grid h3 a:hover {
+		color: $theme-secondary-color;
+	}
+
+	.grid p {
+		margin: 0;
+	}
+}
+
+
+/***********************
+	service s2 grids
+*************************/
+.services-grid-s2 {
+	.grid {
+		text-align: center;
+		padding: 50px 35px;
+		border: 1px solid #d9d9d9;
+		border-radius: 5px;
+		position: relative;
+
+		@include media-query(991px) {
+			padding: 35px 20px;
+		}
+	}
+
+	.grid .icon,
+	.grid .details {
+		position: relative;
+		z-index: 2;
+	}
+
+	.grid .icon {
+		background-color: $theme-primary-color;
+		width: 100px;
+		height: 100px;
+		line-height: 100px;
+		border-radius: 50%;
+		margin: 0 auto 35px;
+
+		@include media-query(991px) {
+			width: 80px;
+			height: 80px;
+			line-height: 80px;
+		}
+	}
+
+	.grid .fi:before {
+		font-size: 45px;
+		font-size: calc-rem-value(45);
+		color: $theme-secondary-color;
+
+		@include media-query(991px) {
+			font-size: 35px;
+			font-size: calc-rem-value(35);
+		}
+	}
+
+	.grid h3 {
+		font-size: 24px;
+		font-size: calc-rem-value(24);
+		margin: 0 0 0.83em;
+		padding-bottom: 0.42em;
+		position: relative;
+
+		@include media-query(991px) {
+			font-size: 20px;
+			font-size: calc-rem-value(20);
+		}
+
+		@include media-query(767px) {
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+		}
+
+		&:after {
+			content: "";
+			background-color: $theme-secondary-color;
+			width: 28px;
+			height: 4px;
+			border-radius: 5px;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			@include translatingX();
+		}
+	}
+
+	.read-more {
+		font-family: $heading-font;
+		font-weight: 600;
+		color: $theme-primary-color;
+		display: inline-block;
+		margin-top: 1.2em;
+	}
+
+	.read-more:hover {
+		color: $theme-secondary-color;
+	}
+
+	.hover-grid {
+		@include background-style("../images/services-s2-grid-bg.jpg", center center, cover, no-repeat, local);
+	}
+
+	/** hover **/
+	.grid:hover .hover-grid {
+		opacity: 1;
+	}
+
+	.grid:hover .hover-grid span {
+		height: 100%;
+		opacity: 1;
+	}
+
+	.grid:hover h3,
+	.grid:hover p {
+		color: $white;
+	}
+
+	.grid:hover .read-more {
+		color: $theme-secondary-color;
+	}
+}
+
+.hover-grid {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	@include transition-time(0.3s);
+
+	span {
+		background-color: transparentize($theme-primary-color, 0.1);
+		width: 33.33%;
+		height: 10%;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		opacity: 0;
+		-webkit-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+
+	span:nth-child(2) {
+		left: 33.33%;
+		height: 20%;
+		-webkit-transition: all 0.3s 0.1s ease-in-out;
+		transition: all 0.3s 0.1s ease-in-out;
+	}
+
+	span:nth-child(3) {
+		left: 66.66%;
+		height: 30%;
+		-webkit-transition: all 0.3s 0.2s ease-in-out;
+		transition: all 0.3s 0.2s ease-in-out;
+	}
+}

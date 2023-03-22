@@ -1,0 +1,38 @@
+/************************************
+	team grid
+**********************************/
+.team-grids {
+
+	.grid:hover .member-info {
+		background-color: $theme-secondary-color;
+
+		h4,
+		> span {
+			color: $theme-primary-color;
+		}
+	}
+
+	.member-info {
+		background-color: $theme-primary-color;
+		text-align: center;
+		padding: 13px 15px;
+		@include transition-time(0.3s);
+	}
+
+	.member-info h4 {
+		font-size: 18px;
+		font-size: calc-rem-value(18);
+		font-weight: 600;
+		color: $white;
+		margin: 0 0 8px;
+
+		@include media-query(767px) {
+			font-size: 16px;
+			font-size: calc-rem-value(16);
+		}
+	}
+
+	.member-info > span {
+		color: $theme-secondary-color;
+	}
+}

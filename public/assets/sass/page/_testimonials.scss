@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------
+	#testimonails page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#11.0	testimonials-pg-content
+--------------------------------------------------------------*/
+.testimonials-pg .page-title {
+	@include background-style("../images/pg-title/img-5.jpg", center center, cover, no-repeat, local);
+}
+
+.testimonials-pg-content {
+	padding-bottom: 25px;
+
+	@include media-query(767px) {
+		padding-bottom: 15px;
+	}
+
+	@extend .testimonials-section;
+
+	.testimonials-grids {
+		margin: 0 -30px;
+		overflow: hidden;
+
+		@include media-query(991px) {
+			margin: 0 -15px;
+		}
+	}
+
+	.testimonials-grids .grid {
+		width: 50%;
+		float: left;
+		padding: 0 15px 55px;
+
+		@include media-query(600px) {
+			width: 100%;
+			float: none;
+		}
+	}
+}

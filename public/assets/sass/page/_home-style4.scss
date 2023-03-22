@@ -1,0 +1,66 @@
+/*--------------------------------------------------------------
+	#home style 4
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#4.0	projects-section-s2
+--------------------------------------------------------------*/
+.project-section-s3-3grid {
+	@extend .projects-section;
+
+	.projects-grid .grid {
+		width: 33.33%;
+
+		@include media-query(991px) {
+			width: 50%;
+		}
+
+		@include media-query(550px) {
+			width: 100%;
+		}
+	}
+
+	.projects-grid .grid .details {
+		border: 4px solid $theme-secondary-color;
+	}
+}
+
+
+/*--------------------------------------------------------------
+#4.1	pricing-section
+--------------------------------------------------------------*/
+.pricing-section {
+	.section-title {
+		margin-bottom: 75px;
+
+		@include media-query(767px) {
+			margin-bottom: 45px;
+		}
+	}
+	
+	.container {
+		overflow: hidden;
+	}
+
+	.owl-carousel .owl-stage-outer {
+		overflow: visible;
+	}
+
+	.owl-controls {
+		margin-top: 50px;
+	}
+
+	.owl-controls .owl-dots .owl-dot span {
+		background-color: $theme-primary-color;
+	}
+
+	.owl-controls .owl-dots .active span {
+		background-color: $theme-secondary-color;
+	}
+}
+
+.pricing-pg-section {
+	.pricing-grids {
+		padding-top: 25px;
+	}
+}
+

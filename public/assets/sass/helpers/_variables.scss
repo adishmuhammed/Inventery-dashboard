@@ -1,0 +1,25 @@
+/*---------------------------
+	Fonts
+----------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Hind|Poppins:500,600,700');
+
+// fonts
+$base-font-size: 15;
+$hind: 'Hind', sans-serif;
+$poppins: 'Poppins', sans-serif;
+
+$base-font: $hind;
+$heading-font: $poppins;
+
+// color
+$blue: #012f5c;
+$yellow: #fdd415;
+$dark-gray: #2a2a2a;
+$white: #fff;
+$black: #000;
+$mid-gray: #999999;
+
+$theme-primary-color: $blue;
+$theme-secondary-color: $yellow;
+$text-color: $mid-gray;
+$heading-color: $theme-primary-color;

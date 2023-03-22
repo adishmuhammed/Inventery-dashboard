@@ -1,0 +1,169 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+Theme Name: 	Finance Top
+Version:        1.0.0
+Author:         themexriver
+URL:            http://themeforest.net/user/themexriver
+-------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+#0.1	Theme Reset Style
+#0.2	Global Elements
+#0.3	header
+#0.4	hero-slider
+#0.5	footer
+#0.6	services-section
+#0.7	cta
+#0.8	services-section-s2
+#0.9	about-section
+#1.0	projects-section
+#1.1	partners-section
+#1.2	testimonials-section
+#1.3	newsletter-section
+#1.4	blog-section 
+#1.5	contact-section 
+
+
+
+--------------------------------------------------------------
+	#home style 2
+----------------------------------------------------------------
+#2.0	services-section-s2
+#2.1	fun-fact
+#2.2	about-section-s2 
+
+
+--------------------------------------------------------------
+	#home style 3
+----------------------------------------------------------------
+#3.0	services-section-s3
+#3.1	about-section-s3
+#3.2	projects-section-s2
+#3.3	team-section
+
+
+--------------------------------------------------------------
+	#home style 4
+----------------------------------------------------------------
+#4.0	projects-section-s2
+#4.1	pricing-section
+
+
+--------------------------------------------------------------
+	#about page
+----------------------------------------------------------------
+#5.0	about-section-with-bg
+
+
+--------------------------------------------------------------
+	#team page
+----------------------------------------------------------------
+#6.0	team-pg-section
+
+
+--------------------------------------------------------------
+	#services page
+----------------------------------------------------------------
+#7.0	services-pg-section
+
+
+--------------------------------------------------------------
+	#service single page
+----------------------------------------------------------------
+#8.0	service-single-section
+
+
+--------------------------------------------------------------
+	#case studies page
+----------------------------------------------------------------
+#9.0	case-studies-section
+
+
+--------------------------------------------------------------
+	#case study single page
+----------------------------------------------------------------
+#10.0	case-study-single-content
+
+
+--------------------------------------------------------------
+	#testimonails page
+----------------------------------------------------------------
+#11.0	testimonials-pg-content
+
+
+--------------------------------------------------------------
+	#contact page
+----------------------------------------------------------------
+#12.0	contact-pg-content
+
+
+--------------------------------------------------------------
+	#blog page
+----------------------------------------------------------------
+#13.0	blog-pg-content
+#13.1	blog-with-sidebar-section
+#13.2	blog-list
+
+
+--------------------------------------------------------------
+	#blog single page
+----------------------------------------------------------------
+#14.1	blog-single-content	
+
+
+----------------------------------------------------------------*/
+
+// helpers
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+
+// base
+@import "base/base";
+
+
+// components
+@import "components/section-title";
+@import "components/buttons";
+@import "components/form";
+@import "components/social-links";
+@import "components/page-title";
+@import "components/preloader";
+@import "components/service-grids";
+@import "components/projects-grids";
+@import "components/news-grids";
+@import "components/progress-bar";
+@import "components/team-grids";
+@import "components/pricing-grids";
+@import "components/service-sidebar";
+@import "components/pagination";
+@import "components/blog-sidebar";
+
+// layout
+@import "layout/header";
+@import "layout/hero-slider";
+@import "layout/footer";
+
+// components
+@import "components/sticky-header";
+
+// page
+@import "page/home-default";
+@import "page/home-style2";
+@import "page/home-style3";
+@import "page/home-style4";
+@import "page/about";
+@import "page/team";
+@import "page/services";
+@import "page/service-single";
+@import "page/case-studies";
+@import "page/case-study-single";
+@import "page/testimonials";
+@import "page/contact";
+@import "page/blog";
+@import "page/blog-single";
+
+

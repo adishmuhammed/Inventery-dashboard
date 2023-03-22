@@ -1,0 +1,178 @@
+/*--------------------------------------------------------------
+	#case studies single page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#10.0	case-study-single-content
+--------------------------------------------------------------*/
+.case-studies-single-pg .page-title {
+	@include background-style("../images/pg-title/img-4.jpg", center center, cover, no-repeat, local);
+}
+
+.case-study-single-content .case-details {
+	@include widther(1200px) {
+		padding-right: 45px;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	@include media-query(991px) {
+		margin-bottom: 100px;
+	}
+
+	@include media-query(767px) {
+		margin-bottom: 80px;
+	}
+
+	h3 {
+		font-size: calc-rem-value(32);
+		font-weight: normal;
+		margin: 0 0 0.31em;
+
+		@include media-query(991px) {
+			font-size: calc-rem-value(28);
+		}
+
+		@include media-query(767px) {
+			font-size: calc-rem-value(24);
+		}
+	}
+
+	.case-title {
+		margin: 50px 0 30px;
+
+		@include media-query(767px) {
+			margin: 35px 0 20px;
+		}
+	}
+
+	.case-title > span {
+		font-size: calc-rem-value(18);
+		display: block;
+		color: lighten($black, 60%);
+
+		@include media-query(767px) {
+			font-size: calc-rem-value(16);
+		}		
+	}
+
+	.chart {
+		height: 400px;
+		margin: 35px 0 45px;
+
+		@include media-query(767px) {
+			height: 300px;
+		}
+	}
+
+	/*** service single tab ***/
+	.case-single-tab {
+		margin-top: 45px;
+	}
+
+	.case-single-tab .nav {
+		overflow: hidden;
+
+		li {
+			float: left;
+		}
+
+		a {
+			font-size: calc_rem_value(18);
+			font-weight: bold;
+			color: $theme-secondary-color;
+			padding: 10px 45px;
+
+			@include media-query(767px) {
+				font-size: calc_rem_value(14);
+				padding: 10px 17px;
+			}
+		}
+
+		a:hover {
+			background: none;
+		}
+
+		.active a {
+			background: $theme-primary-color;
+			//@include linear-gradient-bg(left, $theme-primary-color, $theme-primary-color2);
+			color: $white;
+		}
+	}
+
+	.tab-content {
+		padding-top: 35px;
+
+		@include media-query(767px) {
+			padding-top: 25px;
+		}
+
+		.tab-pane p {
+			margin-bottom: 25px;
+
+			@include media-query(767px) {
+				margin-bottom: 15px;
+			}
+		}
+
+		.tab-pane p:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.tab-details {
+		margin-top: 60px;
+		overflow: hidden;
+
+		@include media-query(767px) {
+			margin-top: 30px;
+		}
+
+		.img-holder {
+			width: 43%;
+			float: left;
+
+			@include media-query(767px) {
+				width: 100%;
+				float: none;
+			}
+		}
+
+		.info {
+			width: 57%;
+			float: right;
+			padding-left: 40px;
+			
+			@include media-query(767px) {
+				width: 100%;
+				float: none;
+				padding-left: 0;
+				margin-top: 25px;
+			}
+		}
+
+		ul li {
+			line-height: 1.6em;
+			color: $text-color;
+			margin-bottom: 25px;
+			padding-left: 25px;
+			position: relative;
+
+			@include media-query(767px) {
+				margin-bottom: 15px;
+			}
+		}
+
+		ul li:last-child {
+			margin-bottom: 0;
+		}
+
+		ul li i {
+			color: $theme-secondary-color;
+			position: absolute;
+			left: 0;
+			top: 6px;
+		}
+	}	
+}

@@ -1,0 +1,107 @@
+/************************************
+	pricing grids
+**********************************/
+.pricing-grids {
+	.grid {
+		border: 1px solid #cbcbcb;
+		border-radius: 5px;
+		padding: 48px 65px;
+		text-align: center;
+		@include transition-time(0.3s);
+
+		@include media-query(767px) {
+			padding: 35px 25px;
+		}
+	}
+
+	.pricing-header p {
+		margin: 0;
+	}
+
+	.type {
+		color: #333;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+	}
+
+	h3 {
+		font-size: 36px;
+		font-size: calc-rem-value(36);
+		margin: 0.55em 0 0.35em;
+		padding: 0 0 0.35em;
+		position: relative;
+
+		@include media-query(767px) {
+			font-size: 30px;
+			font-size: calc-rem-value(30);
+		}
+
+		&:after {
+			content: "";
+			background-color: $theme-secondary-color;
+			width: 43px;
+			height: 5px;
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			@include translatingX();
+		}
+	}
+
+	.pricing-body {
+		margin-top: 25px;
+
+		p {
+			margin-bottom: 2em;
+			color: #666666;
+			line-height: 2.57em;
+		}
+	}
+
+	.center {
+		background-color: $theme-primary-color;
+		border-radius: 5px;
+		-webkit-transform: scaleY(1.1);
+		transform: scaleY(1.1);
+
+		.type,
+		h3 {
+			color: $white;
+		}
+
+		p {
+			color: #999;
+		}
+
+		.theme-btn {
+			background-color: $theme-secondary-color;
+			color: $theme-primary-color;
+		}
+
+		.theme-btn:after {
+			color: $theme-primary-color;
+		}
+	}
+
+	.grid:hover {
+		background-color: $theme-primary-color;
+
+		.type,
+		h3 {
+			color: $white;
+		}
+
+		p {
+			color: #999;
+		}
+
+		.theme-btn {
+			background-color: $theme-secondary-color;
+			color: $theme-primary-color;
+		}
+
+		.theme-btn:after {
+			color: $theme-primary-color;
+		}
+	}
+}

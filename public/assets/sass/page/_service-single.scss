@@ -1,0 +1,154 @@
+/*--------------------------------------------------------------
+	#service single page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#8.0	service-single-section
+--------------------------------------------------------------*/
+.service-single-pg .page-title {
+	@include background-style("../images/pg-title/img-3.jpg", center center, cover, no-repeat, local);
+}
+
+.service-single-section {
+	ul {
+		list-style: none;
+	}
+
+	p,
+	li {
+		color: #6a6a6a;
+	}
+
+	.service-single-content h3 {
+		font-size: 36px;
+		font-size: calc-rem-value(36);
+		margin: 0 0 0.69em;
+
+		@include media-query(1199px) {
+			font-size: 30px;
+			font-size: calc-rem-value(30);
+		}
+
+		@include media-query(991px) {
+			font-size: 25px;
+			font-size: calc-rem-value(25);
+		}
+
+		@include media-query(767px) {
+			font-size: 22px;
+			font-size: calc-rem-value(22);
+		}
+	}
+
+	.service-single-content .img-holder {
+		margin: 35px 0 0;
+	}
+
+	.service-single-content h4 {
+		font-size: 24px;
+		font-size: calc-rem-value(24);
+		margin: 0 0 0.54em;
+
+		@include media-query(991px) {
+			font-size: 20px;
+			font-size: calc-rem-value(20);
+		}
+
+		@include media-query(767px) {
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+		}
+	}
+
+	.discussion-faq {
+		margin: 50px -15px 0;
+		overflow: hidden;
+
+		.discussion,
+		.faq {
+			width: 50%;
+			float: left;
+			padding: 0 15px;
+
+			@include media-query(991px) {
+				width: 100%;
+				float: none;
+			}
+		}
+	}
+
+	.discussion ul {
+		margin-top: 25px;
+	}
+
+	.discussion ul li {
+		margin-bottom: 10px;
+		position: relative;
+		padding-left: 25px;
+	}
+
+	.discussion ul li i {
+		position: absolute;
+		left: 0;
+		top: 3px;
+	}
+
+	.faq {
+
+		@include media-query(991px) {
+			margin-top: 50px;
+		}
+
+		.panel {
+			border: 1px solid #d8d8d8;
+		}
+
+		.panel-heading {
+			padding: 0;
+		}
+
+		.panel-heading a {
+			font-family: $heading-font;
+			background-color: $theme-primary-color;
+			font-size: 16px;
+			font-size: calc-rem-value(16);
+			color: $white;
+			padding: 15px 30px;
+			display: block;
+			position: relative;
+
+			@include media-query(1199px) {
+				font-size: 14px;
+				font-size: calc-rem-value(14);
+			}
+
+			@include media-query(767px) {
+				padding: 10px 20px;
+			}
+		}
+
+		.panel-heading a:after {
+			font-family: "FontAwesome";
+			content: "\f068";
+			font-size: 16px;
+			font-size: calc-rem-value(16);
+			color: $theme-secondary-color;
+			position: absolute;
+			right: 30px;
+			top: 50%;
+			@include translatingY();
+
+			@include media-query(1199px) {
+				font-size: 14px;
+				font-size: calc-rem-value(14);
+			}
+
+			@include media-query(767px) {
+				right: 20px;
+			}
+		}
+
+		.panel-heading .collapsed:after {
+			content: "\f067";
+		}
+	}
+}

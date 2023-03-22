@@ -1,0 +1,29 @@
+/*--------------------------------------------------------------
+	#team page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#6.0	team-pg-section
+--------------------------------------------------------------*/
+.team-pg .page-title {
+	@include background-style("../images/pg-title/img-2.jpg", center center, cover, no-repeat, local);
+}
+
+.team-pg-section {
+	@extend .team-section;
+
+	.team-grids .grid {
+		width: 25%;
+
+		@include media-query(1199px) {
+			width: 33.33%;
+		}
+		
+		@include media-query(991px) {
+			width: 50%;
+		}
+		
+		@include media-query(500px) {
+			width: 100%;
+		}
+	}
+}
