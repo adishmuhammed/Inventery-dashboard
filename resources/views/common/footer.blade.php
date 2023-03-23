@@ -5,13 +5,12 @@
             <div class="row">
                 <div class="col col-md-4 col-sm-6">
                     <div class="widget about-widget">
-                        <div class="footer-logo"><img src="{{ asset('assets/images/footer-logo.png') }}" alt></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation</p>
+                        <div class="footer-logo"><img src="{{ asset('assets/images/logo.webp') }}" alt></div>
+                        <p>Sahayi Dialysis Center is a diaplsy center in medical collage helpping people to get better
+                            health</p>
                         <ul class="contact-info">
-                            <li><i class="fa fa-phone"></i> +123 (4567) 890 </li>
-                            <li><i class="fa fa-envelope"></i> info@top-finance.com</li>
+                            <li><i class="fa fa-phone"></i> 8281 454 473 </li>
+                            <li><i class="fa fa-envelope"></i> info@sahayidialysis.com</li>
                             <li><i class="fa fa-home"></i> 380 St Kilda Road, Melbourne VIC 3004, Australia
                             </li>
                         </ul>
@@ -23,29 +22,14 @@
                         <h3>Links</h3>
                         <ul>
                             <li><a href="{{ url('#') }}">Home</a></li>
-                            <li><a href="{{ url('#') }}">Services</a></li>
-                            <li><a href="{{ url('#') }}">About us</a></li>
-                            <li><a href="{{ url('#') }}">Testimonials</a></li>
-                            <li><a href="{{ url('#') }}">News</a></li>
+                            <li><a href="{{ url('services.html') }}">Dialysis</a></li>
+                            <li><a href="{{ url('service-single-finance.html') }}">Diploma In Dialysis Technology
+                                    (DDT)</a></li>
+                            <li><a href="{{ url('#') }}">Blogs</a></li>
                             <li><a href="{{ url('#') }}">Contact</a></li>
                         </ul>
                     </div>
                 </div>
-
-                <div class="col col-md-3 col-sm-6">
-                    <div class="widget support-widget">
-                        <h3>Support</h3>
-                        <ul>
-                            <li><a href="{{ url('#') }}">Contact Us</a></li>
-                            <li><a href="{{ url('#') }}">Submit a Ticket</a></li>
-                            <li><a href="{{ url('#') }}">Visit Knowledge Base</a></li>
-                            <li><a href="{{ url('#') }}">Support System</a></li>
-                            <li><a href="{{ url('#') }}">Refund Policy</a></li>
-                            <li><a href="{{ url('#') }}">Professional Services</a></li>
-                        </ul>
-                    </div>
-                </div>
-
                 <div class="col col-md-3 col-sm-6">
                     <div class="widget twitter-feed-widget">
                         <h3>Twitter Feed</h3>
@@ -81,8 +65,7 @@
             <div class="row">
                 <div class="col col-xs-6">
                     <div class="copyright-area">
-                        <p>2017 &copy; All Rights Reserved by <a
-                                href="http://themeforest.net/user/themexriver">Themexriver</a></p>
+                        <p>2023 &copy; Developed by <a href="http://pensare.in/">pensare marketing services</a></p>
                     </div>
                 </div>
                 <div class="col col-xs-6">
