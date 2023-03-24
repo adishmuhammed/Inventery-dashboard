@@ -46,21 +46,21 @@
                 <button class="close-navbar"><i class="fa fa-close"></i></button>
                 <ul class="nav navbar-nav">
                     <li class="menu-item-has-children">
-                        <a href="{{ url('#') }}">Home</a>
+                        <a href="{{ url('/') }}">Home</a>
                     </li>
-                    {{-- <li><a href="{{ url('about.html') }}">About</a></li>
+                    {{-- <li><a href="{{ url('about.html') }}">About</a></li> --}}
                     <li class="menu-item-has-children">
                         <a href="{{ url('#') }}">Services</a>
                         <ul class="sub-menu">
-                            <li><a href="{{ url('services.html') }}">Dialysis</a></li>
-                            <li><a href="{{ url('service-single-finance.html') }}">Diploma In Dialysis Technology
-                                    (DDT)</a></li>
+                            <li><a href="{{ url('/services/dialysis') }}">Dialysis</a></li>
+                            {{-- <li><a href="{{ url('service-single-finance.html') }}">Diploma In Dialysis Technology
+                                    (DDT)</a></li> --}}
                         </ul>
                     </li>
-                    <li class="menu-item-has-children">
+                    {{-- <li class="menu-item-has-children">
                         <a href="{{ url('#') }}">Pages</a>
-                    </li>
-                    <li><a href="{{ url('contact.html') }}">Contact</a></li> --}}
+                    </li> --}}
+                    <li><a href="{{ url('/contact-us') }}">Contact</a></li>
                 </ul>
             </div><!-- end of nav-collapse -->
         </div><!-- end of container -->

@@ -65,10 +65,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col col-sm-6">
-                            <div class="video">
-                                <img src="{{ asset('assets/images/about-s2/img-1.jpg') }}" alt="">
-                                <a href="https://www.youtube.com/embed/opj24KnzrWo?autoplay=1" class="video-btn"
-                                    data-type="iframe"><i class="fa fa-play"></i></a>
+                            <div class="about-img">
+                                <img src="{{ asset('assets\images\about-s2\DSCF9222.webp') }}" alt="">
                             </div>
                         </div>
                         <div class="col col-sm-6">
