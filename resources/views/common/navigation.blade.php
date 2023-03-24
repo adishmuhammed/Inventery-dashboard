@@ -48,12 +48,12 @@
                     <li class="menu-item-has-children">
                         <a href="{{ url('/') }}">Home</a>
                     </li>
-                    <li><a href="{{ url('about.html') }}">About</a></li>
+                    <li><a href="{{ url('/about-us') }}">About</a></li>
                     <li class="menu-item-has-children">
                         <a href="{{ url('#') }}">Services</a>
                         <ul class="sub-menu">
-                            <li><a href="{{ url('services/dialysis') }}">Dialysis</a></li>
-                            <li><a href="{{ url('services/Diploma-In-Dialysis-Technology-(DDT)') }}">Diploma
+                            <li><a href="{{ url('/services/dialysis') }}">Dialysis</a></li>
+                            <li><a href="{{ url('/services/diploma-in-dialysis-technology-(DDT)') }}">Diploma
                                     In Dialysis Technology
                                     (DDT)</a></li>
                         </ul>
@@ -61,7 +61,7 @@
                     {{-- <li class="menu-item-has-children">
                         <a href="{{ url('#') }}">Gallery</a>
                     </li> --}}
-                    <li><a href="{{ url('contact-us') }}">Contact</a></li>
+                    <li><a href="{{ url('/contact-us') }}">Contact</a></li>
                 </ul>
             </div><!-- end of nav-collapse -->
         </div><!-- end of container -->

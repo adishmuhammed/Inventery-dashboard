@@ -25,10 +25,10 @@ Route::get('/services/dialysis', function () {
     return view('charity_services');
 });
 
-Route::get('/services/Diploma-In-Dialysis-Technology-(DDT)', function () {
+Route::get('/services/diploma-in-dialysis-technology-(DDT)', function () {
     return view('cource_services');
 });
 
-Route::get('/about', function () {
-    
+Route::get('/about-us', function () {
+    return view('about');
 });
