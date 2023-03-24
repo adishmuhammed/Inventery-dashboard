@@ -9,9 +9,10 @@
                         <p>Sahayi Dialysis Center is a diaplsy center in medical collage helpping people to get better
                             health</p>
                         <ul class="contact-info">
-                            <li><i class="fa fa-phone"></i> 8281 454 473 </li>
+                            <li><i class="fa fa-phone"></i> 096567 11325 </li>
                             <li><i class="fa fa-envelope"></i> info@sahayidialysis.com</li>
-                            <li><i class="fa fa-home"></i> 380 St Kilda Road, Melbourne VIC 3004, Australia
+                            <li><i class="fa fa-home"></i> Madathumpoyil Road, Poonoor, Unnikulam P.O, Calicut, Kerala
+                                673574
                             </li>
                         </ul>
                     </div>
