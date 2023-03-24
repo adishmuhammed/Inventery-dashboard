@@ -28,3 +28,7 @@ Route::get('/services/dialysis', function () {
 Route::get('/services/Diploma-In-Dialysis-Technology-(DDT)', function () {
     return view('cource_services');
 });
+
+Route::get('/about', function () {
+    
+});
