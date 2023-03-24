@@ -5,7 +5,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 slide-caption">
-                        <h2>We are here to help</h2>
+                        <h2>Website Development Preview</h2>
                         <div class="btns">
                             <a href="{{ url('#') }}" class="theme-btn">Donate Us</a>
                             <a href="{{ url('#') }}" class="theme-btn-s2">Become a volunteer</a>
