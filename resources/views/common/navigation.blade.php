@@ -52,15 +52,16 @@
                     <li class="menu-item-has-children">
                         <a href="{{ url('#') }}">Services</a>
                         <ul class="sub-menu">
-                            <li><a href="{{ url('/services/dialysis') }}">Dialysis</a></li>
-                            {{-- <li><a href="{{ url('service-single-finance.html') }}">Diploma In Dialysis Technology
-                                    (DDT)</a></li> --}}
+                            <li><a href="{{ url('services/dialysis') }}">Dialysis</a></li>
+                            <li><a href="{{ url('services/Diploma-In-Dialysis-Technology-(DDT)') }}">Diploma
+                                    In Dialysis Technology
+                                    (DDT)</a></li>
                         </ul>
                     </li>
                     {{-- <li class="menu-item-has-children">
                         <a href="{{ url('#') }}">Pages</a>
                     </li> --}}
-                    <li><a href="{{ url('/contact-us') }}">Contact</a></li>
+                    <li><a href="{{ url('contact-us') }}">Contact</a></li>
                 </ul>
             </div><!-- end of nav-collapse -->
         </div><!-- end of container -->
