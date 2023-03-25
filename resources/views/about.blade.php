@@ -3,7 +3,7 @@
 
 <head>
     @include('common.meta', [
-        'title' => 'Sahayi Dialysis Center',
+        'title' => 'About Sahayi Dialysis Center',
         'metaDescribtion' =>
             'Sahayi Dialysis Center is a diaplsy center in medical collage helpping people to get better health.',
     ])
@@ -14,7 +14,7 @@
         @include('common.preloader')
         @include('common.navigation')
         @include('common.page_start', [
-            'pageName' => 'Sahayi Dialysis Center',
+            'pageName' => 'About Sahayi Dialysis Center',
             'pageCategory' => 'Services',
         ])
 

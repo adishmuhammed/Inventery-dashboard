@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     @include('common.meta', [
-        'title' => 'About Sahayi Dialysis Center',
+        'title' => 'Contact Sahayi Dialysis Center',
         'metaDescribtion' =>
             'Sahayi Dialysis Center is a diaplsy center in medical collage helping people to get better health and providing free dialysis services.',
     ])
 </head>
+
 <body class="contact-pg">
     <!-- start page-wrapper -->
     <div class="page-wrapper">
@@ -17,7 +19,9 @@
         @include('common.navigation')
         <!-- end of header -->
         <!-- start page-title -->
-        @include('common.page_start')
+        @include('common.page_start', [
+            'pageName' => 'Contact',
+        ])
         <!-- end page-title -->
         <!-- start contact-pg-content -->
         <section class="contact-pg-content section-padding">
@@ -79,4 +83,5 @@
     <!-- end of page-wrapper -->
     @include('common.scripts')
 </body>
+
 </html>

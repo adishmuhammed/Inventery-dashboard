@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\BlogController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -31,4 +35,45 @@ Route::get('/services/diploma-in-dialysis-technology-(DDT)', function () {
 
 Route::get('/about-us', function () {
     return view('about');
+});
+
+// admin pannel
+Route::get('/blogs', [BlogController::class, 'index']);
+Route::get('/add', [ProductsController::class, 'create'])->name('products.create');
+Route::post('/delete/{product}', [ProductsController::class, 'destroy'])->name('products.destroy');
+Route::post('/store', [ProductsController::class, 'store'])->name('products.store');
+Route::post('/blog/store', [BlogController::class, 'store'])->name('blog.store');
+Route::post('/blog/delete/{blog}', [BlogController::class, 'destroy'])->name('blog.destroy');
+
+// error page routing
+Route::get('/404', function () {
+    return view('error.404');
+});
+
+Route::get('/500', function () {
+    return view('error.500');
+});
+
+Route::get('/503', function () {
+    return view('error.503');
+});
+
+Route::get('/400', function () {
+    return view('error.400');
+});
+
+Route::get('/403', function () {
+    return view('error.403');
+});
+
+Route::get('/401', function () {
+    return view('error.401');
+});
+
+Route::get('/502', function () {
+    return view('error.502');
+});
+
+Route::get('/504', function () {
+    return view('error.504');
 });

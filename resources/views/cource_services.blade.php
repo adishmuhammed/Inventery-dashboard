@@ -14,7 +14,7 @@
         @include('common.preloader')
         @include('common.navigation')
         @include('common.page_start', [
-            'pageName' => 'Sahayi Dialysis Center',
+            'pageName' => 'Diploma In Dialysis Technology',
             'pageCategory' => 'Services',
         ])
 
