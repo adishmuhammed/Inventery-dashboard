@@ -5420,7 +5420,6 @@ img {
 --------------------------------------------------------------*/
 .contact-section,
 .contact-pg-content {
-  background: url("../images/newsletter-bg.jpg") center center/cover no-repeat fixed;
   position: relative;
 }
 
@@ -5549,7 +5548,6 @@ img {
 #2.1	fun-fact
 --------------------------------------------------------------*/
 .fun-fact {
-  background: url("../images/fun-fact-bg.jpg") center center/cover no-repeat fixed;
   padding: 85px 0;
   position: relative;
 }
