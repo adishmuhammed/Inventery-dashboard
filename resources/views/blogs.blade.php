@@ -1,3 +1,7 @@
+@php
+    use Carbon\Carbon;
+@endphp
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,7 +46,8 @@
                                             </p>
                                         </div>
                                         <div class="entry-meta">
-                                            <a href="{{ url('#') }}" class="read-more">Read More</a>
+                                            <a href="{{ route('blog.show', ['blog' => $blog]) }}" class="read-more">Read
+                                                More</a>
                                         </div>
                                     </div>
                                 </div>

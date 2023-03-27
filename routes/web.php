@@ -37,6 +37,13 @@ Route::get('/about-us', function () {
     return view('about');
 });
 
+Route::get('/blogs', [BlogController::class, 'index']);
+
+Route::get('/gallery', [ProductsController::class, 'index']);
+
+// single blogs
+Route::get('/blog/{blog}', [BlogController::class, 'show'])->name('blog.show');
+
 // admin pannel
 Route::get('/blogs', [BlogController::class, 'index']);
 Route::get('/add', [ProductsController::class, 'create'])->name('products.create');

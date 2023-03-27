@@ -57,7 +57,11 @@
                                     </div>
                                 </div>
                             @endforeach
-                            {{ $product->links('common.pagination') }}
+                            <div class="pagination-wrapper">
+                                <ul class="pg-pagination">
+                                    {{ $products->links('common.pagination') }}
+                                </ul>
+                            </div>
                         </div> <!-- end col -->
                     </div> <!-- end row -->
                 </div> <!-- end container -->

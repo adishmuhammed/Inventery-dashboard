@@ -43,10 +43,10 @@ class BlogController extends Controller
 
     public function show(Blogs $blog)
     {
-        $tags = explode(“, ”, $blog->blog_tags);
+        $tags = explode(",", $blog->blog_tags);
         // make $tags a list consisted of words inside $tags separated by ',' comma
 
-        $timestamp = $blog->getCreatedAtColumn();
+        $timestamp = $blog->created_at;
 
         // Convert the timestamp to a Carbon instance
         $date = Carbon::parse($timestamp);
@@ -54,7 +54,7 @@ class BlogController extends Controller
         // Format the date in the desired format
         $formattedDate = $date->format('d M, Y');
 
-        return view('blog', compact('blog', 'tags', 'formattedDate'));
+        return view('single_blog', compact('blog', 'tags', 'formattedDate'));
     }
 
 
