@@ -58,9 +58,12 @@
                                     (DDT)</a></li>
                         </ul>
                     </li>
-                    {{-- <li class="menu-item-has-children">
-                        <a href="{{ url('#') }}">Gallery</a>
-                    </li> --}}
+                    <li class="menu-item-has-children">
+                        <a href="{{ url('/gallery') }}">Gallery</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="{{ url('/blogs') }}">Blogs</a>
+                    </li>
                     <li><a href="{{ url('/contact-us') }}">Contact</a></li>
                 </ul>
             </div><!-- end of nav-collapse -->

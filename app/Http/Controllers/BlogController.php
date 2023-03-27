@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blogs;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
@@ -42,10 +43,18 @@ class BlogController extends Controller
 
     public function show(Blogs $blog)
     {
-        $tags = explode(“, ”, $blog->blog_tags);
+        $tags = explode(",", $blog->blog_tags);
         // make $tags a list consisted of words inside $tags separated by ',' comma
 
-        return view('blog', compact('blog', 'tags'));
+        $timestamp = $blog->created_at;
+
+        // Convert the timestamp to a Carbon instance
+        $date = Carbon::parse($timestamp);
+
+        // Format the date in the desired format
+        $formattedDate = $date->format('d M, Y');
+
+        return view('single_blog', compact('blog', 'tags', 'formattedDate'));
     }
 
 

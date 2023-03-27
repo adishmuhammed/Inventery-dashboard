@@ -94,8 +94,8 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="thumbnail">
-                            <img src="{{ asset(Storage::disk('public')->url($request->product_image)) }}"
-                                alt="{{ $product->title }}" width='300' hight='360'>
+                            <img src="{{ asset(Storage::url($blog->blog_image)) }}" alt="{{ $product->title }}"
+                                width='300' hight='360'>
                             <div class="caption">
                                 <h3>{{ $blog->blog_title }}</h3>
                                 <sub>{{ $blog->blog_tags }}</sub>
