@@ -1,4 +1,4 @@
-<section class="page-title" style="background-image: url("assets\images\zyro-image (1).webp")">
+<section class="page-title" style="background-image: url('{{ asset('assets/images/zyro-image (1).webp') }}') ">
     <div class="container">
         <div class="row">
             <div class="col col-xs-12">

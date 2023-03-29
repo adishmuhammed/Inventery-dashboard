@@ -51,3 +51,6 @@
 
     {{-- my icons --}}
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+    {{-- my custom style sheet edit, spamming !importent --}}
+    <link rel="stylesheet" href="{{ asset('style.css') }}">

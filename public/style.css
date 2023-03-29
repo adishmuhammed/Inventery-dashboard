@@ -1,0 +1,27 @@
+:root {
+    --primary-color: #00a751;
+    --secondary-color: #d92f3b;
+}
+
+.nav li a {
+    color: rgba(0, 0, 0, 0.802) !important;
+    font: 100 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.nav li a:hover {
+    color: #d92f3b !important;
+}
+
+.site-header #navbar>ul .sub-menu {
+    background-color: var(--primary-color);
+    color: #fff !important;
+    border-top: 2px solid var(--secondary-color);
+}
+
+#navbar>ul>li>ul>li>a {
+    color: #fff !important;
+}
+
+#header>div>div {
+    padding: 1rem 0rem !important;
+}
