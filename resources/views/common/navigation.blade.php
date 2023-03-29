@@ -14,14 +14,14 @@
                             <div>
                                 <i class="fa fa-phone-square"></i>
                                 <div class="details">
-                                    <p>Call us</p>
-                                    <span>8281 454 473</span>
+                                    <p>Gpay</p>
+                                    <span><a href="upi://pay?pa=rashidkv07@oksbi">7511154473</a></span>
                                 </div>
                             </div>
                             <div>
                                 <i class="fa fa-clock-o"></i>
                                 <div class="details">
-                                    <p>Working hours</p>
+                                    <p>Link</p>
                                     <span>Mon - Fri: 9 am - 7 pm</span>
                                 </div>
                             </div>
@@ -67,10 +67,10 @@
                                     (DDT)</a></li>
                         </ul>
                     </li>
-                    <li >
+                    <li>
                         <a href="{{ url('/gallery') }}">Gallery</a>
                     </li>
-                    <li >
+                    <li>
                         <a href="{{ url('/blogs') }}">Blogs</a>
                     </li>
                     <li><a href="{{ url('/contact-us') }}">Contact</a></li>
