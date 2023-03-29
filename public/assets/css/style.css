@@ -784,7 +784,7 @@ img {
 }
 
 .preloader span {
-  background-color: #0263c1;
+  background-color: #d92f3b;
   width: 9px;
   height: 5px;
   position: absolute;
@@ -826,7 +826,7 @@ img {
     height: 5px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    background: #0263c1;
+    background: #d92f3b;
   }
 
   25% {
@@ -845,7 +845,7 @@ img {
     height: 5px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    background: #0263c1;
+    background: #d92f3b;
   }
 
   25% {
@@ -1213,7 +1213,7 @@ img {
 }
 
 .hover-grid span {
-  background-color: rgba(0,167,81,0.9);
+  background-color: rgba(0, 167, 81, 0.9);
   width: 33.33%;
   height: 10%;
   position: absolute;
@@ -3487,7 +3487,7 @@ img {
 }
 
 .header-style-3 .navigation {
-  background-color: rgba(0,167,81,0.9);
+  background-color: rgba(0, 167, 81, 0.9);
 }
 
 @media screen and (min-width: 992px) {
@@ -4567,7 +4567,7 @@ img {
 
 .cta:before {
   content: "";
-  background-color: rgba(0,167,81,0.9);
+  background-color: rgba(0, 167, 81, 0.9);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -4640,7 +4640,7 @@ img {
 .services-section-s2 .phone-bg:before,
 .services-section-s3 .phone-bg:before {
   content: "";
-  background-color: rgba(0,167,81,0.9);
+  background-color: rgba(0, 167, 81, 0.9);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -5257,7 +5257,7 @@ img {
 
 .newsletter-section:before {
   content: "";
-  background-color: rgba(0,167,81,0.9);
+  background-color: rgba(0, 167, 81, 0.9);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -5426,7 +5426,7 @@ img {
 .contact-section:before,
 .contact-pg-content:before {
   content: "";
-  background-color: rgba(0,167,81,0.9);
+  background-color: rgba(0, 167, 81, 0.9);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -5572,7 +5572,7 @@ img {
 
 .fun-fact:before {
   content: "";
-  background-color: rgba(0,167,81,0.9);
+  background-color: rgba(0, 167, 81, 0.9);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -5710,7 +5710,7 @@ img {
 
 .about-section-s2 .video:before {
   content: "";
-  background-color: rgba(0,167,81,0.9);
+  background-color: rgba(0, 167, 81, 0.9);
   width: 100%;
   height: 100%;
   position: absolute;

@@ -12,17 +12,14 @@
                     <div class="col col-sm-9">
                         <div class="contact-info">
                             <div>
-                                <i class="fa fa-phone-square"></i>
+                                <i><img title="google pay link" width="40"
+                                        src="{{ asset('assets\images\case-studies\google-pay.png') }}"
+                                        alt="Gpay logo"></i>
+                                <span style="margin:3rem 0rem;"></span>
                                 <div class="details">
                                     <p>Gpay</p>
-                                    <span><a href="upi://pay?pa=rashidkv07@oksbi">7511154473</a></span>
-                                </div>
-                            </div>
-                            <div>
-                                <i class="fa fa-clock-o"></i>
-                                <div class="details">
-                                    <p>Link</p>
-                                    <span>Mon - Fri: 9 am - 7 pm</span>
+                                    <span><a
+                                            href="upi://pay?pa=qr.aisha@sib&pn=AISHA%20HUSSAIN%20DIALYSIS%20CENTRE&mc=8099&cu=INR&mc=From%20Website%20Of%20Sahayi%20Dialysis">7511154473</a></span>
                                 </div>
                             </div>
                         </div>
