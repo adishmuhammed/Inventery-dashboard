@@ -22,37 +22,39 @@
                     <div class="widget links-widget">
                         <h3>Links</h3>
                         <ul>
-                            <li><a href="{{ url('#') }}">Home</a></li>
+                            <li><a href="{{ url('/') }}">Home</a></li>
                             <li><a href="{{ url('services.html') }}">Dialysis</a></li>
                             <li><a href="{{ url('service-single-finance.html') }}">Diploma In Dialysis Technology
                                     (DDT)</a></li>
-                            <li><a href="{{ url('#') }}">Blogs</a></li>
-                            <li><a href="{{ url('#') }}">Contact</a></li>
+                            <li><a href="{{ url('/blogs') }}">Blogs</a></li>
+                            <li><a href="{{ url('/contact-us') }}">Contact</a></li>
                         </ul>
                     </div>
                 </div>
+
+                <div class="col col-md-2 col-sm-6">
+                    <div class="widget links-widget">
+                        <h3></h3>
+                        <ul>
+                            <li><a href="{{ url('/gallery') }}">Gallery</a></li>
+                            <li><a href="{{ url('/about-us') }}">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+
                 <div class="col col-md-3 col-sm-6">
                     <div class="widget twitter-feed-widget">
-                        <h3>Twitter Feed</h3>
+                        <h3>Testimonials</h3>
                         <ul>
                             <li>
                                 <div class="text">
-                                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-                                        fugit. Ed quia con sequuntur magni dolores.</p>
+                                    <p>The NGO services giving free treatment to the poor kidney failure patients is
+                                        much appreciated</p>
                                 </div>
                                 <div class="info-box">
                                     <i class="fa fa-twitter"></i>
-                                    <strong><a href="{{ url('#') }}">@Mark Wahlberg</a></strong>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="text">
-                                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-                                        fugit. Ed quia con sequuntur magni dolores.</p>
-                                </div>
-                                <div class="info-box">
-                                    <i class="fa fa-twitter"></i>
-                                    <strong><a href="{{ url('#') }}">@Mark Wahlberg</a></strong>
+                                    <strong><a href="{{ url('#') }}">Rashid koduvally (Director,
+                                            Pensare)</a></strong>
                                 </div>
                             </li>
                         </ul>

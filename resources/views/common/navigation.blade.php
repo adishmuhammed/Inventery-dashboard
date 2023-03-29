@@ -6,7 +6,7 @@
                     <div class="col col-sm-3">
                         <div class="site-logo">
                             <a href="{{ url('#') }}"><img src="{{ asset('assets/images/logo.webp') }}" alt="logo"
-                                    title="the logo of sahayi" height="100"></a>
+                                    title="the logo of sahayi" width="200"></a>
                         </div>
                     </div>
                     <div class="col col-sm-9">
@@ -32,7 +32,7 @@
         </div> <!-- end lower-topbar -->
     </div> <!-- end topbar -->
 
-    <nav class="navigation navbar navbar-default">
+    <nav class="navigation navbar navbar-default center-block">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="open-btn">
@@ -42,15 +42,16 @@
                     <span class="icon-bar"></span>
                 </button>
             </div>
-            <div id="navbar" class="navbar-collapse collapse navigation-holder">
+            <div id="navbar" class="navbar-collapse collapse navigation-holder"
+                style="display: flex !important ; justify-content: center; margin:0%;">
                 <button class="close-navbar"><i class="fa fa-close"></i></button>
                 <ul class="nav navbar-nav">
-                    <li class="menu-item-has-children">
+                    <li>
                         <a href="{{ url('/') }}">Home</a>
                     </li>
                     <li><a href="{{ url('/about-us') }}">About</a></li>
                     <li class="menu-item-has-children">
-                        <a href="{{ url('#') }}">Services</a>
+                        <a href="{{ url('/services/diploma-in-dialysis-technology-(DDT)') }}">Services</a>
                         <ul class="sub-menu">
                             <li><a href="{{ url('/services/dialysis') }}">Dialysis</a></li>
                             <li><a href="{{ url('/services/diploma-in-dialysis-technology-(DDT)') }}">Diploma
@@ -59,9 +60,17 @@
                         </ul>
                     </li>
                     <li class="menu-item-has-children">
+                        <a href="{{ url('#') }}">Courses</a>
+                        <ul class="sub-menu">
+                            <li><a href="{{ url('/services/diploma-in-dialysis-technology-(DDT)') }}">Diploma
+                                    In Dialysis Technology
+                                    (DDT)</a></li>
+                        </ul>
+                    </li>
+                    <li >
                         <a href="{{ url('/gallery') }}">Gallery</a>
                     </li>
-                    <li class="menu-item-has-children">
+                    <li >
                         <a href="{{ url('/blogs') }}">Blogs</a>
                     </li>
                     <li><a href="{{ url('/contact-us') }}">Contact</a></li>
