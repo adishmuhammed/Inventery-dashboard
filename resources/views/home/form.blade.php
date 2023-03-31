@@ -4,7 +4,7 @@
             <div class="col col-md-6">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.41430872910155!2d75.90371673051716!3d11.434455530034194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba668a13c4fccc5%3A0x7a200f521054aba0!2sSAHAYI%20DIALYSIS%20CENTRE!5e0!3m2!1sen!2sin!4v1679893501517!5m2!1sen!2sin"
-                    width="100%" height="100%" style="border:0;" allowfullscreen="true" loading="lazy"
+                    width="100%" class="wikth" style="border:0;" allowfullscreen="true" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="col col-md-6">

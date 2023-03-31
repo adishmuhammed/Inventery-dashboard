@@ -150,3 +150,14 @@ body>div>footer>div.upper-footer {
     margin-top: 0px;
     margin-bottom: 1rem;
 }
+
+.wikth {
+    height: 390px;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 991px) {
+    .wikth {
+        height: 100%;
+    }
+}
