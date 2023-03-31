@@ -5,7 +5,12 @@
             <div class="row">
                 <div class="col col-md-4 col-sm-6">
                     <div class="widget about-widget">
-                        <div class="footer-logo"><img src="{{ asset('assets/images/logo.webp') }}" alt></div>
+                        <div class="footer-logo"><img src="{{ asset('assets/images/logo.webp') }}" alt>
+                            <div class="logo-title">
+                                <h4>Sahayi</h4>
+                                <h4>Dialysis</h4>
+                            </div>
+                        </div>
                         <p>Sahayi Dialysis Center is a diaplsy center in medical collage helpping people to get better
                             health</p>
                         <ul class="contact-info">

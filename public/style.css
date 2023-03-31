@@ -33,3 +33,12 @@
 body>div>main>section {
     padding: 1rem 0rem !important;
 }
+
+.logo-title {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: flex-start;
+    padding: 2pt;
+    font-weight: bolder;
+}

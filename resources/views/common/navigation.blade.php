@@ -6,7 +6,12 @@
                     <div class="col col-sm-3">
                         <div class="site-logo">
                             <a href="{{ url('#') }}"><img src="{{ asset('assets/images/logo.webp') }}" alt="logo"
-                                    title="the logo of sahayi" width="200"></a>
+                                    title="the logo of sahayi" width="50">
+                                    <div class="logo-title">
+                                        <h4>Sahayi</h4>
+                                        <h4>Dialysis</h4>
+                                    </div>
+                                </a>
                         </div>
                     </div>
                     <div class="container" style="color:black">
