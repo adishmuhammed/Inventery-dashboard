@@ -25,3 +25,11 @@
 #header>div>div {
     padding: 1rem 0rem !important;
 }
+
+#navbar>ul {
+    width: 100%;
+}
+
+body>div>main>section {
+    padding: 1rem 0rem !important;
+}
