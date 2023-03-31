@@ -5,7 +5,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 slide-caption">
-                        <h2>Join the Best DDT Course at Our Center and Become a Dialysis Expert</h2>
+                        <h2>Join the DDT Course at Our Center, Become a Dialysis Expert</h2>
                         <div class="btns">
                             <a href="{{ url('upi://pay?pa=qr.aisha@sib&pn=AISHA%20HUSSAIN%20DIALYSIS%20CENTRE&mc=8099&cu=INR&mc=From%20Website%20Of%20Sahayi%20Dialysis') }}"
                                 class="theme-btn">Donate Us</a>

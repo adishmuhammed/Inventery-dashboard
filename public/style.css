@@ -38,7 +38,115 @@ body>div>main>section {
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 2pt;
-    font-weight: bolder;
+    font-weight: lighter;
+    width: min-content;
+    line-height: 10pt;
+}
+
+.logo-title>h4 {
+    margin: 0pt;
+    font-weight: 100;
+}
+
+
+body>div>footer>div.upper-footer>div>div>div.col.col-md-4.col-sm-6>div>div>span>h4 {
+    font-size: xx-large;
+}
+
+@media (max-width: 767px) {
+
+    .header-style-2 .site-logo,
+    .header-style-3 .site-logo,
+    .header-style-4 .site-logo,
+    .header-style-5 .site-logo,
+    .header-style-6 .site-logo {
+        text-align: left;
+    }
+}
+
+.about-section-s2 .container>.row:last-child .about-text {
+    margin-bottom: 0px !important;
+}
+
+.section-padding {
+    padding: 0px !important;
+}
+
+@media (max-width: 991px) {
+    .site-header .navbar-header button {
+        background-color: gray !important;
+    }
+}
+
+.icon-wrapper {
+    display: flex;
+    gap: 1pt;
+    align-items: center;
+}
+
+.theme-btn-s2 {
+    background-color: #00A751;
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+
+    .header-style-1 .navbar-header,
+    .header-style-2 .navbar-header,
+    .header-style-3 .navbar-header,
+    .header-style-4 .navbar-header,
+    .header-style-5 .navbar-header,
+    .header-style-6 .navbar-header {
+        padding-bottom: 0px;
+    }
+}
+
+.menu-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    padding-top: 1rem;
+}
+
+body>div>footer>div.upper-footer {
+    padding: 1rem 0rem !important;
+}
+
+.site-footer .widget>h3:before,
+.site-footer .widget .footer-logo:before {
+    display: none !important;
+}
+
+#header>div>div>div>div>div.col.col-sm-3>div>a>span h4 {
+    /* capitalise text */
+    text-transform: uppercase !important;
+    font-size: 11pt;
+}
+
+@media (max-width: 991px) {
+    #header>div>div>div {
+        padding-top: 0%;
+    }
+}
+
+#header>div>div>div>div>div.container {
+    padding-top: 0%;
+}
+
+#header>div>div>div {
+    padding-top: 0%;
+}
+
+.theme-btn-s2:after {
+    color: yellow !important;
+}
+
+.about-section-s4 .about-img,
+.about-section-s5 .about-img {
+    margin-top: 0px;
+    margin-bottom: 1rem;
 }
