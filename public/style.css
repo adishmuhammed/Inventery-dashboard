@@ -147,7 +147,7 @@ body>div>footer>div.upper-footer {
 
 .about-section-s4 .about-img,
 .about-section-s5 .about-img {
-    margin-top: 0px;
+    margin-top: -20%;
     margin-bottom: 1rem;
 }
 
@@ -160,4 +160,31 @@ body>div>footer>div.upper-footer {
     .wikth {
         height: 100%;
     }
+}
+
+.about-section-s2 .container>.row:first-child {
+    margin-bottom: 1rem;
+}
+
+.fun-fact {
+    padding: 0% 0% !important;
+}
+
+/* screen > 991px */
+@media (max-width: 991px) {
+    .fun-fact {
+        padding: 0% 0% !important;
+    }
+
+    .fun-fact .row>.col {
+        margin: 1rem 0rem !important;
+    }
+
+    body>div>main>section.section-padding.about-section-s4>div>div:nth-child(2)>div.col.col-md-5>div {
+        margin-top: 1rem;
+    }
+}
+
+body>div>section.fun-fact>div>div {
+    margin: 1rem;
 }
