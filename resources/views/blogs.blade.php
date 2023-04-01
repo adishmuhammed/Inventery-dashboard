@@ -26,40 +26,42 @@
             <!-- start blog-pg-content -->
             <section class="blog-pg-content section-padding">
                 <div class="container">
-                    @foreach ($blogs as $blog)
-                        <div class="row news-grids">
-                            <div class="col col-md-4 col-xs-6">
-                                <div class="grid">
-                                    <div class="entry-media">
-                                        <img src="{{ asset(Storage::url($blog->blog_image)) }}" alt>
-                                    </div>
-                                    <div class="entry-body">
-                                        <div class="entry-header">
-                                            <span
-                                                class="date">{{ Carbon::parse($blog->timestamp)->diffForHumans(['parts' => 2]) }}
-                                                ago</span>
-                                            <h3><a href="{{ url('#') }}">{{ $blog->blog_title }}</a>
-                                            </h3>
+                    @isset($blogs)
+                        @foreach ($blogs as $blog)
+                            <div class="row news-grids">
+                                <div class="col col-md-4 col-xs-6">
+                                    <div class="grid">
+                                        <div class="entry-media">
+                                            <img src="{{ asset(Storage::url($blog->blog_image)) }}" alt>
                                         </div>
-                                        <div class="entry-details">
-                                            <p>{!! Str::limit(Str::markdown($blog->blog_content), 256, '...') !!}
-                                            </p>
-                                        </div>
-                                        <div class="entry-meta">
-                                            <a href="{{ route('blog.show', ['blog' => $blog]) }}" class="read-more">Read
-                                                More</a>
+                                        <div class="entry-body">
+                                            <div class="entry-header">
+                                                <span
+                                                    class="date">{{ Carbon::parse($blog->timestamp)->diffForHumans(['parts' => 2]) }}
+                                                    ago</span>
+                                                <h3><a href="{{ url('#') }}">{{ $blog->blog_title }}</a>
+                                                </h3>
+                                            </div>
+                                            <div class="entry-details">
+                                                <p>{!! Str::limit(Str::markdown($blog->blog_content), 256, '...') !!}
+                                                </p>
+                                            </div>
+                                            <div class="entry-meta">
+                                                <a href="{{ route('blog.show', ['blog' => $blog]) }}" class="read-more">Read
+                                                    More</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    @endforeach
+                        @endforeach
 
-                    <div class="pagination-wrapper">
-                        <ul class="pg-pagination">
-                            {{ $blogs->links('common.pagination') }}
-                        </ul>
-                    </div>
+                        <div class="pagination-wrapper">
+                            <ul class="pg-pagination">
+                                {{ $blogs->links('common.pagination') }}
+                            </ul>
+                        </div>
+                    @endisset
                 </div> <!-- end container -->
             </section>
             <!-- end blog-pg-content -->

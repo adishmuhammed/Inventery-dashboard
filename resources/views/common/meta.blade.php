@@ -15,14 +15,13 @@
     <!-- Page Title -->
     <title> {{ $title }} </title>
 
-    <!-- Favicon and Touch Icons -->
-    <link href="{{ asset('assets/images/favicon/favicon.png') }}" rel="shortcut icon" type="image/png">
-    <link href="{{ asset('assets/images/favicon/apple-touch-icon-57x57.png') }}" rel="apple-touch-icon" sizes="57x57">
-    <link href="{{ asset('assets/images/favicon/apple-touch-icon-72x72.png') }}" rel="apple-touch-icon" sizes="72x72">
-    <link href="{{ asset('assets/images/favicon/apple-touch-icon-114x114.png') }}" rel="apple-touch-icon"
-        sizes="114x114">
-    <link href="{{ asset('assets/images/favicon/apple-touch-icon-144x144.png') }}" rel="apple-touch-icon"
-        sizes="144x144">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ asset('/favicon.ico') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('/site.webmanifest') }}">
+
 
     <!-- Icon fonts -->
     <link href="{{ asset('assets/css/font-awesome.min.css') }}" rel="stylesheet">
@@ -52,3 +51,6 @@
 
     {{-- my icons --}}
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+    {{-- my custom style sheet edit, spamming !importent --}}
+    <link rel="stylesheet" href="{{ asset('style.css') }}">

@@ -33,35 +33,36 @@
                                     <li><a data-filter=".events" href="{{ url('#') }}">Events</a></li>
                                 </ul>
                             </div>
-
-                            @foreach ($products as $product)
-                                <div class="gallery-container projects-grid">
-                                    <div class="grid business consulting">
-                                        <div class="inner">
-                                            <div class="img-holder">
-                                                <img src="{{ asset(Storage::url($product->product_image)) }}" alt>
-                                            </div>
-                                            <div class="details">
-                                                <div class="details-inner">
-                                                    <ul>
-                                                        <li><a href="{{ asset(Storage::url($product->product_image)) }}"
-                                                                class="fancybox"><i class="fa fa-search"></i></a></li>
-                                                        <li><a href="{{ url('#') }}"><i class="fa fa-link"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                    <h3>{{ $product->product_name }}</h3>
-                                                    <p class="cat">startup</p>
+                            @isset($products)
+                                @foreach ($products as $product)
+                                    <div class="gallery-container projects-grid">
+                                        <div class="grid business consulting">
+                                            <div class="inner">
+                                                <div class="img-holder">
+                                                    <img src="{{ asset(Storage::url($product->product_image)) }}" alt>
+                                                </div>
+                                                <div class="details">
+                                                    <div class="details-inner">
+                                                        <ul>
+                                                            <li><a href="{{ asset(Storage::url($product->product_image)) }}"
+                                                                    class="fancybox"><i class="fa fa-search"></i></a></li>
+                                                            <li><a href="{{ url('#') }}"><i class="fa fa-link"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                        <h3>{{ $product->product_name }}</h3>
+                                                        <p class="cat">startup</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                @endforeach
+                                <div class="pagination-wrapper">
+                                    <ul class="pg-pagination">
+                                        {{ $products->links('common.pagination') }}
+                                    </ul>
                                 </div>
-                            @endforeach
-                            <div class="pagination-wrapper">
-                                <ul class="pg-pagination">
-                                    {{ $products->links('common.pagination') }}
-                                </ul>
-                            </div>
+                            @endisset
                         </div> <!-- end col -->
                     </div> <!-- end row -->
                 </div> <!-- end container -->
