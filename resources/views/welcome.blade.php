@@ -40,6 +40,7 @@
                                     of charge and also
                                     ensures that no patient is deprived of treatment. The full and part-time nursing
                                     professionals and staffs here create a world worth living in</p>
+                                @include('home.donate_box')
                                 <h3>How we work</h3>
                                 <p>At Sahayi Dialysis Center, we work hard to ensure
                                     that our patients receive the best possible care. We are always looking for ways to
