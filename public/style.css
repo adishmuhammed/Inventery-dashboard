@@ -48,7 +48,7 @@ body>div>main>section {
 .logo-title>h4 {
     margin: 0pt;
     font-weight: 100;
-    color: gray;
+    color: rgb(67, 67, 67);
 }
 
 
@@ -185,6 +185,7 @@ body>div>footer>div.upper-footer {
         margin-top: 1rem;
     }
 }
+
 :root {
     --primary-color: #00a751;
     --secondary-color: #d92f3b;
