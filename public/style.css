@@ -420,3 +420,14 @@ body>div>section.fun-fact>div>div {
 .black {
     color: black !important;
 }
+
+.about-img>img {
+    overflow: hidden;
+    object-fit: cover;
+
+}
+
+.about-section-s4 .about-img,
+.about-section-s5 .about-img {
+    margin-top: 0%;
+}

@@ -72,8 +72,7 @@
                         </div>
                         <div class="col col-sm-6">
                             <div class="about-text">
-                                <h3>
-                                    Diploma In Dialysis Technology (DDT)</h3>
+                                <h3>Diploma In Dialysis Technology (DDT)</h3>
                                 <p>Diploma in Dialysis Techniques is a 2-year skilled-based certification course that
                                     trains
                                     students to purify and filter the blood and excess or waste materials from the human

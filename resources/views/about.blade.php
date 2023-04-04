@@ -53,6 +53,29 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="row">
+                        <div class="col col-md-5">
+                            <div class="about-img">
+                                <img src="{{ asset('assets\images\case-studies\history.webp') }}" alt="">
+                            </div>
+                        </div>
+                        <div class="col col-md-7">
+                            <div class="about-details">
+                                <h3>Our History</h3>
+                                <p>sahayi, a charitable organization that runs the center, Aisha Hussain Dialysis Centre
+                                    is a leading dialysis centre that provides lifesaving treatment for patients with
+                                    chronic kidney failure12. It is a one-stop destination to serve customers or
+                                    patients from across the region12. The centre is the sole hope of the people that
+                                    provide dialysis services free of charge and also ensures that no patient is
+                                    deprived of treatment12. The full and part-time nursing professionals and staffs
+                                    here create a world worth living in12. In the previous three years, they have
+                                    completed 19,465 free of visit dialysis treatments12. The facility to diagnose and
+                                    support 60 patients in a day in three shifts is an added advantage of their
+                                    diagnosis centre</p>
+                            </div>
+                        </div>
+                    </div>
                 </div> <!-- end container -->
             </section>
         </main>
