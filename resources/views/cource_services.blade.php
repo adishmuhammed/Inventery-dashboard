@@ -46,6 +46,35 @@
                     </div>
                 </div> <!-- end container -->
             </section>
+            <section class="about-section-s2 section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-sm-6">
+                            <div class="about-text">
+                                <h3>
+                                    Apply Now To Enrol </h3>
+                                <p>If you are interested in pursuing a career in the healthcare sector, you may want to
+                                    consider enrolling in the Dialysis Diploma Course offered by our institution. This
+                                    course will equip you with the skills and knowledge to perform dialysis procedures
+                                    for patients with kidney failure. Dialysis technicians are in high demand in
+                                    hospitals, clinics and dialysis centers across the country. The best part is that
+                                    you can study this course free of charge, thanks to a generous scholarship from our
+                                    sponsors. However, this opportunity is only available for girls who have completed
+                                    their plus two education. If you meet this criterion and have a passion for helping
+                                    others, you can apply for this course by filling out the online application form on
+                                    our website. Hurry up, as the seats are limited and the deadline is approaching
+                                    soon. </p>
+                                <a href="{{ url('#') }}" class="theme-btn">Get Details</a>
+                            </div>
+                        </div>
+                        <div class="col col-sm-6">
+                            <div class="about-img">
+                                <img src="{{ asset('assets\images\about-s2\DSCF9222.webp') }}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end container -->
+            </section>
         </main>
 
         @include('common.footer')
