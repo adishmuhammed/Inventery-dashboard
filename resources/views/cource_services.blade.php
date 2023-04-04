@@ -69,7 +69,8 @@
                         </div>
                         <div class="col col-sm-6">
                             <div class="about-img">
-                                <img src="{{ asset('assets\images\about-s2\DSCF9222.webp') }}" alt="">
+                                <img src="{{ asset('assets\images\services\hemodialysis-room-equipment.webp') }}"
+                                    alt="">
                             </div>
                         </div>
                     </div>
