@@ -5,7 +5,7 @@
                 <div class="row">
                     <div class="col col-sm-3">
                         <div class="site-logo">
-                            <a class="icon-wrapper" href="{{ url('#') }}"><img
+                            <a class="icon-wrapper" href="{{ url('/') }}"><img
                                     src="{{ asset('assets/images/logo.webp') }}" alt="logo"
                                     title="the logo of sahayi" width="50" height="49.5">
                                 <span class="logo-title">
@@ -34,12 +34,9 @@
                                 </li>
                                 <li><a href="{{ url('/about-us') }}">About</a></li>
                                 <li class="menu-item-has-children">
-                                    <a href="{{ url('/services/diploma-in-dialysis-technology-(DDT)') }}">Services</a>
+                                    <a>Services</a>
                                     <ul class="sub-menu">
                                         <li><a href="{{ url('/services/dialysis') }}">Dialysis</a></li>
-                                        <li><a href="{{ url('/services/diploma-in-dialysis-technology-(DDT)') }}">Diploma
-                                                In Dialysis Technology
-                                                (DDT)</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children">

@@ -40,6 +40,7 @@
                                     of charge and also
                                     ensures that no patient is deprived of treatment. The full and part-time nursing
                                     professionals and staffs here create a world worth living in</p>
+                                @include('home.donate_box')
                                 <h3>How we work</h3>
                                 <p>At Sahayi Dialysis Center, we work hard to ensure
                                     that our patients receive the best possible care. We are always looking for ways to
@@ -71,8 +72,7 @@
                         </div>
                         <div class="col col-sm-6">
                             <div class="about-text">
-                                <h3>
-                                    Diploma In Dialysis Technology (DDT)</h3>
+                                <h3>Diploma In Dialysis Technology (DDT)</h3>
                                 <p>Diploma in Dialysis Techniques is a 2-year skilled-based certification course that
                                     trains
                                     students to purify and filter the blood and excess or waste materials from the human
