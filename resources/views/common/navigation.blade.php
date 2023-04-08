@@ -34,12 +34,9 @@
                                 </li>
                                 <li><a href="{{ url('/about-us') }}">About</a></li>
                                 <li class="menu-item-has-children">
-                                    <a href="{{ url('/services/diploma-in-dialysis-technology-(DDT)') }}">Services</a>
+                                    <a>Services</a>
                                     <ul class="sub-menu">
                                         <li><a href="{{ url('/services/dialysis') }}">Dialysis</a></li>
-                                        <li><a href="{{ url('/services/diploma-in-dialysis-technology-(DDT)') }}">Diploma
-                                                In Dialysis Technology
-                                                (DDT)</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children">
