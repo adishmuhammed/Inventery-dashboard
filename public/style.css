@@ -563,3 +563,7 @@ a.button-white {
     }
 
 }
+
+.services-grid-s2 .hover-grid {
+    background: url("public/assets/images/logo.webp") center center/cover no-repeat local;
+}

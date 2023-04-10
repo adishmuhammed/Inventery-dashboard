@@ -77,10 +77,11 @@
                                     </div>
                                     <div class="details">
                                         <h3>Caring patients</h3>
-                                        <p>We prioritize the comfort and well-being of all our patients and treat them
-                                            with
-                                            kindness, compassion, and respect.</p>
-                                        <a href="{{ url('#') }}" class="read-more">Read More</a>
+                                        <p>At Sahayi dialysis, we care for our patients like family. We provide
+                                            compassionate care and monitor your health during your dialysis treatments.
+                                            We help you choose the best dialysis option for you. We make your dialysis
+                                            comfortable and safe.</p>
+
                                     </div>
                                     <div class="hover-grid">
                                         <span></span>
@@ -94,10 +95,12 @@
                                     </div>
                                     <div class="details">
                                         <h3>Free dialysis</h3>
-                                        <p>We prioritize the comfort and well-being of all our patients and treat them
-                                            with
-                                            kindness, compassion, and respect..</p>
-                                        <a href="{{ url('#') }}" class="read-more">Read More</a>
+                                        <p>At Sahayi dialysis, we offer free dialysis services to the poor and needy who
+                                            cannot afford the treatment. We have partnered with government schemes and
+                                            private donors to provide quality renal care to our patients. We believe
+                                            that everyone deserves access to dialysis regardless of their financial
+                                            status.</p>
+
                                     </div>
                                     <div class="hover-grid">
                                         <span></span>
@@ -111,10 +114,11 @@
                                     </div>
                                     <div class="details">
                                         <h3>Free monitoring</h3>
-                                        <p>Our monitoring services are completely free, so patients can rest assured
-                                            knowing
-                                            they are being closely watched and monitored at all times.</p>
-                                        <a href="{{ url('#') }}" class="read-more">Read More</a>
+                                        <p>We offer free monitoring of your kidney function and dialysis treatment. We
+                                            use lab tests and registries to measure your dialysis effectiveness and
+                                            outcomes. We adjust your dialysis plan as needed. We educate you about your
+                                            condition and treatment.</p>
+
                                     </div>
                                     <div class="hover-grid">
                                         <span></span>
@@ -128,10 +132,11 @@
                                     </div>
                                     <div class="details">
                                         <h3>Providing necessary medicine </h3>
-                                        <p>We provide all necessary medication to our patients, ensuring they have
-                                            access to
-                                            the drugs they need to manage their condition.</p>
-                                        <a href="{{ url('#') }}" class="read-more">Read More</a>
+                                        <p>At Sahayi dialysis, we give medicine to help you manage your kidney disease
+                                            and other conditions. We prescribe medications and vitamins that replace
+                                            nutrients. We monitor and adjust your medication use and educate you about
+                                            it.</p>
+
                                     </div>
                                     <div class="hover-grid">
                                         <span></span>
@@ -145,10 +150,11 @@
                                     </div>
                                     <div class="details">
                                         <h3>Advanced equipments</h3>
-                                        <p>We provide all necessary medication to our patients, ensuring they have
-                                            access to
-                                            the drugs they need to manage their condition.</p>
-                                        <a href="{{ url('#') }}" class="read-more">Read More</a>
+                                        <p>At Sahayi dialysis, we use advanced equipments to provide you with the best
+                                            dialysis treatment. We use high-quality dialyzers and hemodialysis machines
+                                            that filter your blood. We also use efficient water purification systems
+                                            that reduce water consumption and waste generation..</p>
+
                                     </div>
                                     <div class="hover-grid">
                                         <span></span>
@@ -162,12 +168,11 @@
                                     </div>
                                     <div class="details">
                                         <h3>Experienced staff</h3>
-                                        <p>Our staff is highly trained, experienced, and dedicated to providing
-                                            exceptional
-                                            care to our patients. They go above and beyond to ensure our patients
-                                            receive
-                                            top-notch care and attention.</p>
-                                        <a href="{{ url('#') }}" class="read-more">Read More</a>
+                                        <p>At Sahayi dialysis, we have an experienced and trained staff to provide you
+                                            with the best dialysis care. You will see your doctor regularly and get
+                                            personalized attention from our dialysis team. Our staff will monitor your
+                                            health, adjust your treatment, and offer you support and education.</p>
+
                                     </div>
                                     <div class="hover-grid">
                                         <span></span>
