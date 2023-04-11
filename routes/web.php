@@ -37,9 +37,9 @@ Route::get('/about-us', function () {
     return view('about');
 });
 
-Route::get('/blogs', [BlogController::class, 'index']);
+Route::get('/blogs', [BlogController::class, 'index'])->name('blogs');
 
-Route::get('/gallery', [ProductsController::class, 'index']);
+Route::get('/gallery', [ProductsController::class, 'index'])->name('blogs');
 
 // single blogs
 Route::get('/blog/{blog}', [BlogController::class, 'show'])->name('blog.show');
