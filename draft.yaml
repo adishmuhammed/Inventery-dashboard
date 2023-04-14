@@ -1,0 +1,75 @@
+models:
+  Home:
+    title: string
+    content: longtext
+  About:
+    title: string
+    content: longtext
+  Blog:
+    title: string
+    content: longtext
+  Gallery:
+    title: string
+  Contact Us:
+    name: string
+    email: string
+    phone: string
+    message: longtext
+
+controllers:
+  - HomeController:
+      actions:
+        - index:
+            render: home.index with:data
+        - about:
+            render: home.about with:data
+        - contact:
+            render: home.contact with:data
+        - ddt:
+            render: home.ddt with:data
+        - lab_tech:
+            render: home.lab_tech with:data
+
+  - BlogController:
+      actions:
+        - index:
+            query: all
+            render: blog.index with:data
+        - create:
+            render: blog.create with:data
+        - store:
+            validate: title, content
+            save: blog
+            redirect: blog.index
+
+  - GalleryController:
+      actions:
+        - index:
+            query: all
+            render: gallery.index with:data
+        - create:
+            render: gallery.create with:data
+        - store:
+            validate: title
+            save: gallery
+            redirect: gallery.index
+
+  - ContactController:
+      actions:
+        - index:
+            render: contact.index with:data
+        - store:
+            validate: name, email, phone, message
+            save: contact
+
+  - AdminController:
+      actions:
+        - index:
+            query: all
+            render: admin.index with:data
+
+auth:
+  admin_panel
+
+mail:
+  contact_us

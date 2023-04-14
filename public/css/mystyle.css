@@ -1,0 +1,108 @@
+.logo-background {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+/* slider */
+/* Heading */
+.owl-stage .item h1 {
+    text-shadow: rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
+}
+
+/* Span Tag */
+.owl-stage .item span {
+    text-shadow: rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
+}
+
+/* footer */
+/* Boxed footer icon */
+.footer-part .boxed-footer-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translatex(0px) translatey(0px);
+}
+
+/* Image */
+.boxed-footer-icon a img {
+    margin-right: 10px;
+}
+
+/* donate box */
+
+/* Link */
+.services-part .service-p a {
+    color: #ffffff;
+    text-decoration: underline;
+    display: inline-block;
+    height: 65px;
+}
+
+/* Column 3/12 */
+.services-part .p-0 .service-inner {
+    transform: translatex(0px) translatey(0px);
+    height: 303px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Aboutus part */
+div .aboutus-part {
+    transform: translatex(0px) translatey(0px);
+}
+
+/* Link */
+.services-part .service-p a {
+    color: #ffffff;
+    text-decoration: underline;
+    display: inline-block;
+    height: 65px;
+}
+
+/* Column 3/12 */
+.services-part .p-0 .service-inner {
+    transform: translatex(0px) translatey(0px);
+    height: 303px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Aboutus part */
+div .aboutus-part {
+    transform: translatex(0px) translatey(0px);
+}
+
+/* Donate */
+.services-part .p-0 .donate-g {
+    color: #ffffff;
+    background-color: #ff6d0d;
+    background-size: auto;
+    padding-left: 20px;
+    margin-left: 0px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 200px;
+    transform: translatex(0px) translatey(0px);
+}
+
+/* Donate */
+.owl-stage .item .donate-g {
+    background-color: #ff6d0d;
+}
+
+/* Donate (hover) */
+.services-part .p-0 .donate-g:hover {
+    color: #ffffff !important;
+    transform: translatex(0px) translatey(0px);
+}
+
+/* Donate (hover) */
+.services-part .p-0 .donate-g:hover {
+    background-color: #d35400;
+}
