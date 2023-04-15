@@ -1,18 +1,18 @@
 <div class="aboutus-part paddingub" style="">
     <div class="container">
         <div class="row">
-            @isset('leftImg')
+            @if (null !== $leftImg)
                 <div class="col-xs-12 col-lg-6 text-right img-box text-sm-center" style="">
-                    <img src="{{ asset($leftImg) }} class="img-box" alt="about-detail-img" style="">
+                    <img src="{{ asset($leftImg) }}" class="img-box" alt="about-detail-img" style="">
                 </div>
-            @endisset
+            @endif
             <div class="col-xs-12 col-lg-6" style="">
                 <h2 class="title-head-two" style="">
-                    @foreach ($title as $part)
+                    @foreach ($titleWords as $part)
                         @if (str_word_count($part) < 2)
-                            {{ $part }} <br>
+                            <span style="">{{ $part }}</span> <br>
                         @else
-                            <span style="">{{ $part }}</span>
+                            {{ $part }}
                         @endif
                     @endforeach
                 </h2>
@@ -23,11 +23,11 @@
                     <p class="desc-p">{{ $paragraph }}</p>
                 @endforeach
             </div>
-            @isset('rightImg')
+            @if (null !== $rightImg)
                 <div class="col-xs-12 col-lg-6 text-right img-box text-sm-center" style="">
                     <img src="{{ asset($rightImg) }}" class="img-box" alt="about-detail-img" style="">
                 </div>
-            @endisset
+            @endif
         </div>
     </div>
 </div>

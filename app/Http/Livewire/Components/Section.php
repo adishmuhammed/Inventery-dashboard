@@ -9,6 +9,7 @@ class Section extends Component
     public $leftImg;
     public $rightImg;
     public $title;
+    public $titleWords = array();
     public $paragraphs;
     public function render()
     {
@@ -16,17 +17,16 @@ class Section extends Component
         $wordsLength = count($words);
         $threeWords = "";
         foreach ($words as $key => $word) {
-            if ($wordsLength > $key) {
-                if (strlen($threeWords) < 3) {
-                    $threeWords .= $word . " ";
-                    break;
-                } else {
-                    $this->title .= $threeWords;
+            if ($wordsLength - 1 > $key) {
+                $threeWords .= $word . " ";
+                if (str_word_count($threeWords) + 1 > 3) {
+                    array_push($this->titleWords, $threeWords);
+                    $threeWords = "";
                 }
             } else {
-                $this->title .= $word;
+                array_push($this->titleWords, $threeWords);
+                array_push($this->titleWords, $word);
             }
-            dd("this is some serious error");
         }
         return view('livewire.components.section');
     }
