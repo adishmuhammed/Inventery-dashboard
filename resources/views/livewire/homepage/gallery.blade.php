@@ -1,8 +1,8 @@
 <div class="recent-causes-part paddingub">
     <div class="container">
-        <div class="causes-content text-center">
+        <div class="causes-content text-center flex flex-col align-items-center">
             <h2 class="section-title">Gallery</h2>
-            <p class="section-detail">See our state-of-the-art dialysis center and how we provide quality care and
+            <p class="section-detail w-3/5">See our state-of-the-art dialysis center and how we provide quality care and
                 comfort to our patients.
                 Browse through our gallery and get a glimpse of what we do at Sahayi dialysis center.</p>
         </div>

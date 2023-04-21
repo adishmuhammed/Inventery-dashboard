@@ -10,7 +10,7 @@
         :paragraphs="[
             '# Diploma in Dialysis Technology',
             'Sahayi Dialysis Center offers a course in Diploma in Dialysis Technology for those who want to pursue a career in the field of nephrology. The course covers the theoretical and practical aspects of dialysis, such as anatomy and physiology of the kidney, principles and types of dialysis, dialysis equipment and maintenance, infection control and safety measures, patient care and communication skills. The course duration is one year and the eligibility criteria is 10+2 with science stream. The course is affiliated to the Indian Society of Nephrology and recognized by the Ministry of Health and Family Welfare.
-                                    ',
+                                                    ',
             '# Lab Technician Cource',
             'Learn how to perform various tests and procedures in a medical laboratory. Gain practical skills and knowledge in handling lab equipment and samples. Prepare for a rewarding career as a lab technician in various settings.',
         ]" />
@@ -18,5 +18,6 @@
     <livewire:homepage.gallery />
     <livewire:homepage.blogs />
     <livewire:homepage.payment />
+    <livewire:homepage.sponsers />
     <livewire:components.footer />
 </div>

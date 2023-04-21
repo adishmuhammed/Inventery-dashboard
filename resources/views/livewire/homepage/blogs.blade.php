@@ -1,12 +1,13 @@
 <div class="recent-causes-part paddingub">
     <div class="container">
-        <div class="causes-content text-center">
-            <h2 class="section-title">Recent Causes</h2>
-            <p class="section-detail">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                praesentium voluptatum deleniti atque<br>corrupti quos dolores et quas molestias excepturi sint
-                occaecati cupiditate non provident,</p>
+        <div class="causes-content text-center flex flex-col align-items-center">
+            <h2 class="section-title">Blogs</h2>
+            <p class="section-detail w-3/5">Read our blogs and learn more about dialysis, kidney health, nutrition,
+                lifestyle
+                and more. Our blogs are written by experts and patients who share their insights and experiences with
+                you.</p>
         </div>
-        <div class="grid-cols-3">
+        <div class="grid xl:grid-cols-3 place-items-center gap-3">
             <livewire:components.card />
             <livewire:components.card />
             <livewire:components.card />
