@@ -227,3 +227,22 @@ div .services-part .container .row .p-0 .service-inner img {
     }
 
 }
+
+@media (min-width:992px) {
+
+    /* Recent causes part */
+    div .recent-causes-part {
+        padding-top: 40px;
+        padding-bottom: 43px !important;
+    }
+
+}
+
+@media (min-width:992px) {
+
+    /* Recent causes part */
+    div .recent-causes-part:nth-child(7) {
+        padding-top: 0px;
+    }
+
+}
