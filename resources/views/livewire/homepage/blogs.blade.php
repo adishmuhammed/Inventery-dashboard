@@ -6,5 +6,10 @@
                 praesentium voluptatum deleniti atque<br>corrupti quos dolores et quas molestias excepturi sint
                 occaecati cupiditate non provident,</p>
         </div>
+        <div class="grid-cols-3">
+            <livewire:components.card />
+            <livewire:components.card />
+            <livewire:components.card />
+        </div>
     </div>
 </div>

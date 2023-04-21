@@ -6,8 +6,8 @@
                 comfort to our patients.
                 Browse through our gallery and get a glimpse of what we do at Sahayi dialysis center.</p>
         </div>
-        <div class="col-xs-12">
-            <div class="recent-causes-slider">
+        <div class="">
+            <div class="recent-causes-slider homepage-gallery">
                 <div class="item">
                     <div class="recent-causes-img img-box zoom">
                         <img src="{{ asset('/image/cause1.jpg') }}" alt="cause-img">

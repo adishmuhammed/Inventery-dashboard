@@ -106,3 +106,47 @@ div .aboutus-part {
 .services-part .p-0 .donate-g:hover {
     background-color: #d35400;
 }
+
+/* Recent causes slider */
+div div .recent-causes-slider {
+    display: grid;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    column-gap: 20px;
+}
+
+/* Recent causes slider */
+div div .recent-causes-slider {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+@media (max-width:575px) {
+
+    /* Recent causes slider */
+    div div .recent-causes-slider {
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 0px;
+        row-gap: 20px;
+        align-content: normal;
+        justify-content: center;
+    }
+
+    /* Recent causes slider */
+    div .recent-causes-part .container div .recent-causes-slider {
+        grid-template-rows: 1fr 1fr !important;
+        grid-template-columns: auto !important;
+    }
+
+}
+
+/* Image */
+.services-part .p-0 img {
+    height: 82px;
+}
+
+/* Image */
+div .services-part .container .row .p-0 .service-inner img {
+    width: auto !important;
+}
