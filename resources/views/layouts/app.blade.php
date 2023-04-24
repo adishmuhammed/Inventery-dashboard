@@ -23,7 +23,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/homepage-1.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/danveer.css') }}">
     <link rel="stylesheet" href="{{ asset('css/mystyle.css') }}">
-    @vite('resources/css/app.css')
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles()
 </head>
 
@@ -44,6 +44,7 @@
     <script src="{{ asset('/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('/js/owl.carousel.js') }}"></script>
     <script src="{{ asset('/js/custom.js') }}"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
     @livewireScripts()
 </body>
 

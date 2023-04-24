@@ -7,8 +7,12 @@ export default {
     "./resources/**/*.js",
     "./resources/**/*.vue",
   ],
+  options: {
+    ignore: ['./resources/views/livewire/components/header.blade.php'],
+  },
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+  ],
 }

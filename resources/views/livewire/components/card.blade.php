@@ -8,4 +8,4 @@
             sed. Nam convallis massa maximus sed. Nam convallis</p>
         <p class="w-1/4 text-sm leading-tight text-green-500">Read more</p>
     </div>
-</div>
+</div>  

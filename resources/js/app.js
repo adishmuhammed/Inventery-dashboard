@@ -1,3 +1,2 @@
 import './bootstrap';
-import 'tailwindcss/dist/tailwind.css';
-import './styles.css';
+import 'tailwindcss/tailwind.css';
