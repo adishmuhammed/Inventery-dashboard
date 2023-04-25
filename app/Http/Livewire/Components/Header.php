@@ -7,6 +7,7 @@ use Livewire\Component;
 class Header extends Component
 {
     public $mobileMenuOpen = false;
+    public $mobileInnerSubMenuOpen = false;
     public function openMenu()
     {
         $this->mobileMenuOpen = true;
