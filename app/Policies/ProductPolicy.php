@@ -37,7 +37,7 @@ class ProductPolicy
      */
     public function update(User $user, product $product): bool
     {
-        //
+        return $product->user()->is($user);
     }
 
     /**

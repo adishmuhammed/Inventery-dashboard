@@ -27,9 +27,11 @@ class ProductController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreproductRequest $request)
+    public function store(StoreproductRequest $request): RedirectResponse
     {
-        //
+        $validated = $request->validated();
+
+        $request->user()->products()->create($validated);
     }
 
     /**
@@ -53,7 +55,11 @@ class ProductController extends Controller
      */
     public function update(UpdateproductRequest $request, product $product)
     {
-        //
+        $this->authorize('update', $product);
+
+        $validated  = $request->validated();
+        
+        $product->update($validated);
     }
 
     /**
