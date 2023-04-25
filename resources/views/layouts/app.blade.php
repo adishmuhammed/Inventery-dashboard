@@ -24,6 +24,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/danveer.css') }}">
     <link rel="stylesheet" href="{{ asset('css/mystyle.css') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link rel="stylesheet" href="{{ asset('build.css') }}">
     @livewireStyles()
 </head>
 
