@@ -1,3 +1,6 @@
+{{-- use # in paragraph array to specify a heading (untested) --}}
+
+
 <div class="aboutus-part paddingub" style="">
     <div class="container">
         <div class="row">
@@ -17,10 +20,14 @@
                     @endforeach
                 </h2>
                 @foreach ($paragraphs as $paragraph)
-                    @if (substr($paragraph, 0, 1) < '#')
+                    @if (substr($paragraph, 0, 1) == '#')
+                        @php
+                            $paragraph = substr($paragraph, 1);
+                        @endphp
                         <h3 class="title-head-three">{{ $paragraph }}</h3>
+                    @else
+                        <p class="desc-p">{{ $paragraph }}</p>
                     @endif
-                    <p class="desc-p">{{ $paragraph }}</p>
                 @endforeach
             </div>
             @if (null !== $rightImg)

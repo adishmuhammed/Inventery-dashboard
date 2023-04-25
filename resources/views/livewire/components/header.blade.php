@@ -1,38 +1,37 @@
-<header>
-    <nav class="navbar black navbar-dark navbar-expand-lg header">
-        <div class="container p-0">
-            <a class="navbar-brand pl-2 pl-lg-0" href="{{ url('/') }}"><img class="logo-background" src="{{ asset('/images/logo.webp') }}"
-                    alt="logo" width="100"></a>
-            <button class="navbar-toggler border-0 collapsed ml-auto mt-0" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon white"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="nav navbar-nav ml-auto mobilemenu">
-                    <li class="nav-item">
-                        <a class="nav-link " href="{{ url('/') }}">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="{{ url('/') }}">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="{{ url('/') }}">COURSES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="{{ url('/') }}">GALLERY</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/') }}">BLOG</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/') }}">CONTACT US</a>
-                    </li>
-                    <li class="mob-donate d-sm-block d-lg-none">
-                        <a class="nav-link" href="{{ url(' #') }}">DONATE NOW</a>
-                    </li>
-                </ul>
-            </div>
+<header class="absolute z-20 w-full">
+    <nav class="flex md:justify-center justify-around gap-6 items-center p-3" x-data="{ mobileMenuOpen: @entangle('mobileMenuOpen') }">
+        <div class="flex items-center gap-3">
+            <img class="w-12 bg-white rounded-full" src="{{ asset('images/logo.webp') }}" alt="">
+            <h3 class="text-white">Sahayi Dialysis Center</h3>
         </div>
+        <a class="hidden md:block no-underline text-white text-center" href="">Home</a>
+        <a class="hidden md:block no-underline text-white text-center" href="">About</a>
+        <div class="hidden md:block">
+            <livewire:small-components.dropdown-menu :items="['Diploma in Dialysis Technology', 'Lab Technician']" heading="Courses" />
+        </div>
+        <a class="hidden md:block no-underline text-white text-center" href="">Gallery</a>
+        <a class="hidden md:block no-underline text-white text-center" href="">Blog</a>
+        <a class="hidden md:block no-underline text-white text-center" href="">Contact</a>
+        <button class="hidden md:block bg-yellow-500 p-2 rounded text-center"> Donate Now</button>
+        <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden block">
+            <i class="fas fa-bars text-white"></i>
+        </button>
+
     </nav>
+    <div x-data="{ mobileInnerSubMenuOpen: @entangle('mobileInnerSubMenuOpen') }" x-show="mobileMenuOpen" @click.away="mobileMenuOpen = false"
+        class="bg-white rounded-xl border absolute w-screen scale-95 -m-2 text-center">
+        <a class="py-3 border-t border-b no-underline block" href="">Home</a>
+        <a class="py-3 border-t border-b no-underline block" href="">About</a>
+        <button class="py-3 border-t border-b no-underline block w-full hover:text-red-500"
+            @click="mobileInnerSubMenuOpen = !mobileInnerSubMenuOpen">
+            Cources
+        </button>
+        <div x-show="mobileInnerSubMenuOpen" @click.away="mobileInnerSubMenuOpen == false" class="text-gray-400">
+            <a class="py-3 border-t border-b no-underline block" href="">Diploma in Dialysis Technology</a>
+            <a class="py-3 border-t border-b no-underline block" href="">Lab Technician</a>
+        </div>
+        <a class="py-3 border-t border-b no-underline block" href="">Gallery</a>
+        <a class="py-3 border-t border-b no-underline block" href="">Blog</a>
+        <a class="py-3 border-t border-b no-underline block" href="">Contact</a>
+    </div>
 </header>

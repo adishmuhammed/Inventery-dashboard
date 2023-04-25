@@ -106,3 +106,143 @@ div .aboutus-part {
 .services-part .p-0 .donate-g:hover {
     background-color: #d35400;
 }
+
+/* Recent causes slider */
+div div .recent-causes-slider {
+    display: grid;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    column-gap: 20px;
+}
+
+/* Recent causes slider */
+div div .recent-causes-slider {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+@media (max-width:575px) {
+
+    /* Recent causes slider */
+    div div .recent-causes-slider {
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 0px;
+        row-gap: 20px;
+        align-content: normal;
+        justify-content: center;
+    }
+
+    /* Recent causes slider */
+    div .recent-causes-part .container div .recent-causes-slider {
+        grid-template-rows: 1fr 1fr !important;
+        grid-template-columns: auto !important;
+    }
+
+}
+
+/* Image */
+.services-part .p-0 img {
+    height: 82px;
+}
+
+/* Image */
+div .services-part .container .row .p-0 .service-inner img {
+    width: auto !important;
+}
+
+/* Pay option */
+.donation-part .payment-part .pay-option {
+    display: flex;
+}
+
+/* Form Division */
+.payment-part .donation-detail form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Donation detail */
+.payment-part .donation-detail {
+    display: flex;
+}
+
+@media (max-width:1199px) {
+
+    /* Form check label */
+    .pay-group .form-check .form-check-label {
+        display: inline-block;
+        flex-wrap: nowrap;
+    }
+
+}
+
+/* Pay option */
+.donation-part .payment-part .pay-option {
+    display: flex;
+}
+
+/* Form Division */
+.payment-part .donation-detail form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Donation detail */
+.payment-part .donation-detail {
+    display: flex;
+}
+
+
+/* Form check label */
+.pay-group .form-check .form-check-label {
+    display: inline-block;
+    flex-wrap: nowrap;
+}
+
+/* Link */
+.payment-part a {
+    display: block;
+    float: left;
+    clear: both;
+}
+
+
+/* myabe delete this */
+@media (max-width:1199px) {
+
+    /* Recent causes part */
+    div .recent-causes-part:nth-child(7) {
+        padding-top: 56px;
+        transform: translatex(0px) translatey(0px);
+    }
+
+}
+
+@media (min-width:992px) {
+
+    /* Recent causes part */
+    div .recent-causes-part:nth-child(6) {
+        padding-bottom: 10px;
+    }
+
+}
+
+@media (min-width:992px) {
+
+    /* Recent causes part */
+    div .recent-causes-part {
+        padding-top: 40px;
+        padding-bottom: 43px !important;
+    }
+
+}
+
+@media (min-width:992px) {
+
+    /* Recent causes part */
+    div .recent-causes-part:nth-child(7) {
+        padding-top: 0px;
+    }
+
+}
