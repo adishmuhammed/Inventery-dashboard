@@ -38,6 +38,15 @@ class AuthenticatedSessionController extends Controller
             return redirect()->route('admin');
         }
 
+        if (!Auth::user()->active) {
+            Auth::logout();
+
+            $request->session()->invalidate();
+
+            $request->session()->regenerateToken();
+            return redirect()->route('login')->with('status', 'Your account is not active.');
+        }
+
         return redirect()->intended(RouteServiceProvider::HOME);
     }
 
