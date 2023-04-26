@@ -285,7 +285,7 @@
 
 /*Make-donation-part*/
 .donation-part.bg-img {
-	background: url(/images/Homepage/payment.webp)no-repeat;
+	background: url(/images/homepage/payment.webp)no-repeat;
 	background-position: left;
 	padding: 0;
 	background-attachment: fixed;
