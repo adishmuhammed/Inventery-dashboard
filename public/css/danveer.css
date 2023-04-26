@@ -392,7 +392,7 @@ select{-webkit-appearance: none;background: url(../image/dropimg.png) no-repeat;
 
 /*Aboutus-page*/
 .about-part.padno{padding-top: 90px;}
-.aboutus-banner{background: url(../image/aboutus-banner.jpg)no-repeat;text-align: center;background-position: center;background-size: cover;}
+.aboutus-banner{background: url(/public/images/forall/charity.webp)no-repeat;text-align: center;background-position: center;background-size: cover;}
 .aboutus-part .title-head-two{font-size: 45px;color: #111;font-weight: 800;font-family: 'Roboto Slab';}
 .aboutus-part .title-head-two span{color:#10cb7f;}
 .aboutus-part .title-head-three{font-size: 20px;color:#10cb7f;font-weight: 700;font-family: 'Roboto Slab';margin: 25px 0;}
