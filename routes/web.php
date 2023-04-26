@@ -38,7 +38,11 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
+    Route::get('/products/{id}/edit', [ProductController::class, 'Edit'])->name('products.edit');
+    Route::patch('/products/{id}', [ProductController::class, 'Update'])->name('products.update');
+    Route::post('/set-distributor/{id}', [ProductController::class, 'SetDistributor'])->name('products.setDistributor');
+
+;
 
 Route::get('/Admin', [AdminDashboard::class, 'index'])
     ->name('admin')

@@ -25,6 +25,8 @@ export default function Dashboard({ auth }: PageProps, {products}:PageProps) {
                 </div>
             </div>
             <ProductTable products={products} />
+            <a href="/add-products">Add products</a>
+            
         </AuthenticatedLayout>
     );
 }

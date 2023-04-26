@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreproductRequest;
 use App\Http\Requests\UpdateproductRequest;
 use App\Models\product;
+use GuzzleHttp\Psr7\Request;
+use Inertia\Inertia;
 
 class ProductController extends Controller
 {
@@ -48,10 +50,31 @@ class ProductController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(product $product)
+
+
+    public function edit($id)
     {
-        //
+        $product = Product::findOrFail($id);
+
+        $categories = Category::all();
+
+        return Inertia::render('EditProduct', [
+            'product' => $product,
+            'categories' => $categories,
+        ]);
     }
+
+    public function SetDistributor(Request $request, $id)
+    {
+        $product = Product::findOrFail($id);
+
+        $product->distributor = $request->distributor;
+
+        $product->save();
+
+        return redirect()->back();
+    }
+
 
     /**
      * Update the specified resource in storage.
@@ -60,7 +83,7 @@ class ProductController extends Controller
     {
         $this->authorize('update', $product);
 
-        $validated  = $request->validated();
+        $validated = $request->validated();
 
         $product->update($validated);
     }
