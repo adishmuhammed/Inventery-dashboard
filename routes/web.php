@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminDashboard;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Middleware\AdminMiddleware;
 use Illuminate\Foundation\Application;
@@ -41,7 +42,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/products/{id}/edit', [ProductController::class, 'Edit'])->name('products.edit');
     Route::patch('/products/{id}', [ProductController::class, 'Update'])->name('products.update');
     Route::post('/set-distributor/{id}', [ProductController::class, 'SetDistributor'])->name('products.setDistributor');
-
+    Route::get('/add-categories', [ProductController::class, 'AddCategories'])->name('products.addCategories');
+    Route::post('/new-categories', [ProductController::class, 'NewCategories'])->name('products.newCategories')
 ;
 
 Route::get('/Admin', [AdminDashboard::class, 'index'])

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreproductRequest;
 use App\Http\Requests\UpdateproductRequest;
+use App\Models\categories;
 use App\Models\product;
 use GuzzleHttp\Psr7\Request;
 use Inertia\Inertia;
@@ -62,6 +63,18 @@ class ProductController extends Controller
             'product' => $product,
             'categories' => $categories,
         ]);
+    }
+
+    public function AddCategories()
+    {
+        return Inertia::render('AddCategories');
+    }
+
+    public function NewCategories(Request $request)
+    {
+        categories::create(['name' => $request->name]);
+
+        return redirect()->back();
     }
 
     public function SetDistributor(Request $request, $id)
