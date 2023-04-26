@@ -5,7 +5,7 @@
             <h3 class="text-white">Sahayi Dialysis Center</h3>
         </div>
         <a class="hidden md:block no-underline text-white text-center" href="">Home</a>
-        <a class="hidden md:block no-underline text-white text-center" href="">About</a>
+        <a class="hidden md:block no-underline text-white text-center" href="{{ route('about') }}">About</a>
         <div class="hidden md:block">
             <livewire:small-components.dropdown-menu :items="['Diploma in Dialysis Technology', 'Lab Technician']" heading="Courses" />
         </div>
@@ -20,7 +20,7 @@
     </nav>
     <div x-data="{ mobileInnerSubMenuOpen: @entangle('mobileInnerSubMenuOpen') }" x-show="mobileMenuOpen" @click.away="mobileMenuOpen = false"
         class="bg-white rounded-xl border absolute w-screen scale-95 -m-2 text-center">
-        <a class="py-3 border-t border-b no-underline block" href="">Home</a>
+        <a class="py-3 border-t border-b no-underline block" href="{{ route('about') }}">Home</a>
         <a class="py-3 border-t border-b no-underline block" href="">About</a>
         <button class="py-3 border-t border-b no-underline block w-full hover:text-red-500"
             @click="mobileInnerSubMenuOpen = !mobileInnerSubMenuOpen">
