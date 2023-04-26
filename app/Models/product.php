@@ -10,7 +10,7 @@ class product extends Model
     use HasFactory;
 
     protected $fillable = [
-        'product_name','sale_price','MRP','category','quantity'
+        'product_name','sale_price','MRP','category','quantity', 'distributor'
     ];
 
     public function user(): BelongsTo
