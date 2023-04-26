@@ -11,11 +11,14 @@ class ProductController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(User $user)
     {
-        //
-    }
+        $products = $user->products;
 
+        return Inertia::render('JustProducts', [
+            'products' => $products,
+        ]);
+    }
     /**
      * Show the form for creating a new resource.
      */
@@ -58,7 +61,7 @@ class ProductController extends Controller
         $this->authorize('update', $product);
 
         $validated  = $request->validated();
-        
+
         $product->update($validated);
     }
 

@@ -2,9 +2,11 @@
 
 use App\Http\Controllers\AdminDashboard;
 use App\Http\Controllers\ProfileController;
+use App\Http\Middleware\AdminMiddleware;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Models\Products;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,7 +29,9 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
+    return Inertia::render('Dashboard', [
+        'products' => Products::all(),
+    ]);
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
@@ -36,9 +40,12 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-
 Route::get('/Admin', [AdminDashboard::class, 'index'])
-    ->name('products.index')
+    ->name('admin')
     ->middleware(['inertia']);
+
+Route::middleware(AdminMiddleware::class)->group(function () {
+    Route::get('/users/{user}/products', [ProductsController::class, 'index']);
+});
 
 require __DIR__ . '/auth.php';

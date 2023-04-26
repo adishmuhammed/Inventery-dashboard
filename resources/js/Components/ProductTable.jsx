@@ -1,13 +1,9 @@
-import { usePage } from '@inertiajs/inertia-react';
-import React, { useEffect } from 'react';
+import React from 'react';
 
-function ProductTable() {
-  const { products } = usePage().props;
+function ProductTable(props) {
+  const products = props.products;
 
-  useEffect(() => {
-    console.log(products);
-  }, [products]);
-
+  // Render table using the products array
   return (
     <table>
       <thead>
@@ -21,7 +17,7 @@ function ProductTable() {
         </tr>
       </thead>
       <tbody>
-        {products.map(product => (
+        {products.map((product) => (
           <tr key={product.id}>
             <td>{product.name}</td>
             <td>{product.sale_price}</td>

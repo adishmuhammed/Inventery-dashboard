@@ -3,7 +3,7 @@ import { Head } from "@inertiajs/react";
 import { PageProps } from "@/types";
 import ProductTable from "@/Components/ProductTable";
 
-export default function Dashboard({ auth }: PageProps) {
+export default function Dashboard({ auth }: PageProps, {products}:PageProps) {
     return (
         <AuthenticatedLayout
             user={auth.user}
@@ -24,7 +24,7 @@ export default function Dashboard({ auth }: PageProps) {
                     </div>
                 </div>
             </div>
-            <ProductTable />
+            <ProductTable products={products} />
         </AuthenticatedLayout>
     );
 }

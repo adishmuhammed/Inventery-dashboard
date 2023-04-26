@@ -13,7 +13,7 @@ class AdminDashboard extends Controller
     {
         $products = Product::all();
 
-        return Inertia::render('ProductIndex', [
+        return Inertia::render('AdminDashboard', [
             'products' => $products,
         ]);
     }
