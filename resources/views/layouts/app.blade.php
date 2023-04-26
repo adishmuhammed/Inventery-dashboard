@@ -24,11 +24,6 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/danveer.css') }}">
     <link rel="stylesheet" href="{{ asset('css/mystyle.css') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <link rel="stylesheet" href="{{ asset('build.css') }}">
-    <link rel="stylesheet" href="{{ asset('build/assets/app-bd596a37.css') }}">
-    <link rel="stylesheet" href="{{ asset('build/assets/app-19783f36.css') }}">
-    <script src="{{ asset('build/assets/app-a9f0d0e3.js') }}"></script>
-    <link rel="manifest" href="{{ asset('build/manifest.json') }}">
     @livewireStyles()
 </head>
 

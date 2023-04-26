@@ -19,4 +19,3 @@ use App\Http\Controllers\BlogController;
 
 
 Route::get('/', Homepage::class)->name('home');
-
