@@ -42,4 +42,13 @@ class UserController extends Controller
 
         return response()->json(null, Response::HTTP_NO_CONTENT);
     }
+
+    public function toggleStatus(User $user)
+    {
+        $user->active = !$user->active;
+        $user->save();
+
+        return response()->json($user);
+    }
+
 }

@@ -46,6 +46,7 @@ Route::get('/Admin', [AdminDashboard::class, 'index'])
 
 Route::middleware(AdminMiddleware::class)->group(function () {
     Route::get('/users/{user}/products', [ProductsController::class, 'index']);
+    Route::patch('/users/{user}/toggle-status', [UsersController::class, 'toggleStatus']);
 });
 
 require __DIR__ . '/auth.php';
