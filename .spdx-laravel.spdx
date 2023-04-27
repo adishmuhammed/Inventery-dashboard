@@ -1,0 +1,1346 @@
+{
+    "SPDXID": "SPDXRef-laravel",
+    "spdxVersion": "SPDX-2.3",
+    "creationInfo": {
+        "created": "2023-04-18T16:36:35.504Z",
+        "creators": [
+            "Organization: VMware, Inc."
+        ]
+    },
+    "name": "SPDX document for Laravel 10.1.1",
+    "dataLicense": "CC0-1.0",
+    "documentDescribes": [
+        "SPDXRef-laravel"
+    ],
+    "documentNamespace": "laravel-10.1.1",
+    "packages": [
+        {
+            "SPDXID": "SPDXRef-laravel",
+            "name": "Laravel",
+            "versionInfo": "10.1.1",
+            "downloadLocation": "https://github.com/laravel/laravel/archive/v10.1.1.tar.gz",
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "filesAnalyzed": false,
+            "externalRefs": [
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceType": "cpe23Type",
+                    "referenceLocator": "cpe:2.3:*:laravel:laravel:10.1.1:*:*:*:*:*:*:*"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-Package-1251fd7969fcb20b",
+            "attributionTexts": [
+                "PkgID: psr/event-dispatcher@1.0.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/psr/event-dispatcher@1.0.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "psr/event-dispatcher",
+            "versionInfo": "1.0.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-129a7d1d056b6461",
+            "attributionTexts": [
+                "PkgID: symfony/deprecation-contracts@v3.2.1"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/deprecation-contracts@v3.2.1",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/deprecation-contracts",
+            "versionInfo": "v3.2.1"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-1329f4d9e8438fd2",
+            "attributionTexts": [
+                "PkgID: nette/schema@v1.2.3"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/nette/schema@v1.2.3",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "BSD-3-Clause AND GPL-2.0-only AND GPL-3.0-only",
+            "licenseDeclared": "BSD-3-Clause AND GPL-2.0-only AND GPL-3.0-only",
+            "name": "nette/schema",
+            "versionInfo": "v1.2.3"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-14486cfcd0e851ff",
+            "attributionTexts": [
+                "PkgID: laravel/serializable-closure@v1.3.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/laravel/serializable-closure@v1.3.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "laravel/serializable-closure",
+            "versionInfo": "v1.3.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-1ca2a191817dac7",
+            "attributionTexts": [
+                "PkgID: symfony/http-foundation@v6.2.8"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/http-foundation@v6.2.8",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/http-foundation",
+            "versionInfo": "v6.2.8"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-22845a3ca8f289ad",
+            "attributionTexts": [
+                "PkgID: tijsverkoyen/css-to-inline-styles@2.2.6"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/tijsverkoyen/css-to-inline-styles@2.2.6",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "BSD-3-Clause",
+            "licenseDeclared": "BSD-3-Clause",
+            "name": "tijsverkoyen/css-to-inline-styles",
+            "versionInfo": "2.2.6"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-26331a01648e68f5",
+            "attributionTexts": [
+                "PkgID: laravel/framework@v10.8.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/laravel/framework@v10.8.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "laravel/framework",
+            "versionInfo": "v10.8.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-278e9c067322ce6",
+            "attributionTexts": [
+                "PkgID: nesbot/carbon@2.66.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/nesbot/carbon@2.66.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "nesbot/carbon",
+            "versionInfo": "2.66.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-297b98683e5ed802",
+            "attributionTexts": [
+                "PkgID: nette/utils@v4.0.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/nette/utils@v4.0.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "BSD-3-Clause AND GPL-2.0-only AND GPL-3.0-only",
+            "licenseDeclared": "BSD-3-Clause AND GPL-2.0-only AND GPL-3.0-only",
+            "name": "nette/utils",
+            "versionInfo": "v4.0.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-2a4ccee589e16627",
+            "attributionTexts": [
+                "PkgID: laravel/tinker@v2.8.1"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/laravel/tinker@v2.8.1",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "laravel/tinker",
+            "versionInfo": "v2.8.1"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-2cc868267b577750",
+            "attributionTexts": [
+                "PkgID: laravel/sanctum@v3.2.1"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/laravel/sanctum@v3.2.1",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "laravel/sanctum",
+            "versionInfo": "v3.2.1"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-2f0f43be86305d6a",
+            "attributionTexts": [
+                "PkgID: vlucas/phpdotenv@v5.5.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/vlucas/phpdotenv@v5.5.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "BSD-3-Clause",
+            "licenseDeclared": "BSD-3-Clause",
+            "name": "vlucas/phpdotenv",
+            "versionInfo": "v5.5.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-31a1ef7ff29a5333",
+            "attributionTexts": [
+                "PkgID: symfony/error-handler@v6.2.9"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/error-handler@v6.2.9",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/error-handler",
+            "versionInfo": "v6.2.9"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-3448b1540a5a941c",
+            "attributionTexts": [
+                "PkgID: league/config@v1.2.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/league/config@v1.2.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "BSD-3-Clause",
+            "licenseDeclared": "BSD-3-Clause",
+            "name": "league/config",
+            "versionInfo": "v1.2.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-3651a98610ee7c86",
+            "attributionTexts": [
+                "PkgID: psy/psysh@v0.11.15"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/psy/psysh@v0.11.15",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "psy/psysh",
+            "versionInfo": "v0.11.15"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-36fe5ffe505f9045",
+            "attributionTexts": [
+                "PkgID: symfony/string@v6.2.8"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/string@v6.2.8",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/string",
+            "versionInfo": "v6.2.8"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-385b830527a5cc65",
+            "attributionTexts": [
+                "PkgID: symfony/polyfill-ctype@v1.27.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/polyfill-ctype@v1.27.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/polyfill-ctype",
+            "versionInfo": "v1.27.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-3a6b77d5e0c25e98",
+            "attributionTexts": [
+                "PkgID: league/flysystem@3.14.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/league/flysystem@3.14.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "league/flysystem",
+            "versionInfo": "3.14.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-3ccebb9d622616b4",
+            "attributionTexts": [
+                "PkgID: graham-campbell/result-type@v1.1.1"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/graham-campbell/result-type@v1.1.1",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "graham-campbell/result-type",
+            "versionInfo": "v1.1.1"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-40622dbcc4e96278",
+            "attributionTexts": [
+                "PkgID: symfony/mailer@v6.2.8"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/mailer@v6.2.8",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/mailer",
+            "versionInfo": "v6.2.8"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-46849572eeba9c9",
+            "attributionTexts": [
+                "PkgID: nikic/php-parser@v4.15.4"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/nikic/php-parser@v4.15.4",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "BSD-3-Clause",
+            "licenseDeclared": "BSD-3-Clause",
+            "name": "nikic/php-parser",
+            "versionInfo": "v4.15.4"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-491e3d74d6aefe71",
+            "attributionTexts": [
+                "PkgID: symfony/translation@v6.2.8"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/translation@v6.2.8",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/translation",
+            "versionInfo": "v6.2.8"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-4b6168c455e7af0a",
+            "attributionTexts": [
+                "PkgID: doctrine/lexer@3.0.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/doctrine/lexer@3.0.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "doctrine/lexer",
+            "versionInfo": "3.0.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-4c199a89a1e83fc6",
+            "attributionTexts": [
+                "PkgID: symfony/routing@v6.2.8"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/routing@v6.2.8",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/routing",
+            "versionInfo": "v6.2.8"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-4e22809dead9f283",
+            "attributionTexts": [
+                "PkgID: league/commonmark@2.4.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/league/commonmark@2.4.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "BSD-3-Clause",
+            "licenseDeclared": "BSD-3-Clause",
+            "name": "league/commonmark",
+            "versionInfo": "2.4.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-5236e0100018716c",
+            "attributionTexts": [
+                "PkgID: brick/math@0.11.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/brick/math@0.11.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "brick/math",
+            "versionInfo": "0.11.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-55a34eb6eda4a3e5",
+            "attributionTexts": [
+                "PkgID: fruitcake/php-cors@v1.2.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/fruitcake/php-cors@v1.2.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "fruitcake/php-cors",
+            "versionInfo": "v1.2.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-5777c92eb87cb4d5",
+            "attributionTexts": [
+                "PkgID: symfony/event-dispatcher-contracts@v3.2.1"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/event-dispatcher-contracts@v3.2.1",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/event-dispatcher-contracts",
+            "versionInfo": "v3.2.1"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-583e0e4be5a11c1",
+            "attributionTexts": [
+                "PkgID: symfony/polyfill-uuid@v1.27.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/polyfill-uuid@v1.27.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/polyfill-uuid",
+            "versionInfo": "v1.27.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-5de721a91e1b8f8f",
+            "attributionTexts": [
+                "PkgID: symfony/event-dispatcher@v6.2.8"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/event-dispatcher@v6.2.8",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/event-dispatcher",
+            "versionInfo": "v6.2.8"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-5e3fae7eb82aac45",
+            "attributionTexts": [
+                "PkgID: ramsey/collection@2.0.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/ramsey/collection@2.0.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "ramsey/collection",
+            "versionInfo": "2.0.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-6ba1f990d1920fe2",
+            "attributionTexts": [
+                "PkgID: dflydev/dot-access-data@v3.0.2"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/dflydev/dot-access-data@v3.0.2",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "dflydev/dot-access-data",
+            "versionInfo": "v3.0.2"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-6c6b22a81b8694f1",
+            "attributionTexts": [
+                "PkgID: symfony/polyfill-php72@v1.27.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/polyfill-php72@v1.27.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/polyfill-php72",
+            "versionInfo": "v1.27.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-718a565d94c5c363",
+            "attributionTexts": [
+                "PkgID: symfony/finder@v6.2.7"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/finder@v6.2.7",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/finder",
+            "versionInfo": "v6.2.7"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-718cfd99cc0aaa",
+            "attributionTexts": [
+                "PkgID: ramsey/uuid@4.7.4"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/ramsey/uuid@4.7.4",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "ramsey/uuid",
+            "versionInfo": "4.7.4"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-7ecc400c8733c489",
+            "attributionTexts": [
+                "PkgID: symfony/polyfill-intl-grapheme@v1.27.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/polyfill-intl-grapheme@v1.27.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/polyfill-intl-grapheme",
+            "versionInfo": "v1.27.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-82054242f521666",
+            "attributionTexts": [
+                "PkgID: psr/http-message@2.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/psr/http-message@2.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "psr/http-message",
+            "versionInfo": "2.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-8c60b6e2d3b10a17",
+            "attributionTexts": [
+                "PkgID: nunomaduro/termwind@v1.15.1"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/nunomaduro/termwind@v1.15.1",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "nunomaduro/termwind",
+            "versionInfo": "v1.15.1"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-99b344726b8c8eda",
+            "attributionTexts": [
+                "PkgID: symfony/translation-contracts@v3.2.1"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/translation-contracts@v3.2.1",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/translation-contracts",
+            "versionInfo": "v3.2.1"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-9d0ab68ac2985b9f",
+            "attributionTexts": [
+                "PkgID: symfony/polyfill-intl-normalizer@v1.27.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/polyfill-intl-normalizer@v1.27.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/polyfill-intl-normalizer",
+            "versionInfo": "v1.27.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-a237550a42b8d0d0",
+            "attributionTexts": [
+                "PkgID: league/mime-type-detection@1.11.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/league/mime-type-detection@1.11.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "league/mime-type-detection",
+            "versionInfo": "1.11.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-a2663c8d1f7bbf40",
+            "attributionTexts": [
+                "PkgID: symfony/polyfill-mbstring@v1.27.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/polyfill-mbstring@v1.27.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/polyfill-mbstring",
+            "versionInfo": "v1.27.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-a4c4868768797307",
+            "attributionTexts": [
+                "PkgID: symfony/var-dumper@v6.2.8"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/var-dumper@v6.2.8",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/var-dumper",
+            "versionInfo": "v6.2.8"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-ac230b23700f6db6",
+            "attributionTexts": [
+                "PkgID: symfony/http-kernel@v6.2.9"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/http-kernel@v6.2.9",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/http-kernel",
+            "versionInfo": "v6.2.9"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-ad06fa7f7510ae24",
+            "attributionTexts": [
+                "PkgID: symfony/service-contracts@v3.2.1"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/service-contracts@v3.2.1",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/service-contracts",
+            "versionInfo": "v3.2.1"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-b3e84b0cdec2ecf6",
+            "attributionTexts": [
+                "PkgID: voku/portable-ascii@2.0.1"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/voku/portable-ascii@2.0.1",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "voku/portable-ascii",
+            "versionInfo": "2.0.1"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-b4727128490745ae",
+            "attributionTexts": [
+                "PkgID: guzzlehttp/psr7@2.5.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/guzzlehttp/psr7@2.5.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "guzzlehttp/psr7",
+            "versionInfo": "2.5.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-b5e7c69266e320f4",
+            "attributionTexts": [
+                "PkgID: symfony/mime@v6.2.7"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/mime@v6.2.7",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/mime",
+            "versionInfo": "v6.2.7"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-b61e6d79738aaa65",
+            "attributionTexts": [
+                "PkgID: webmozart/assert@1.11.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/webmozart/assert@1.11.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "webmozart/assert",
+            "versionInfo": "1.11.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-b75767885a4c76c",
+            "attributionTexts": [
+                "PkgID: symfony/console@v6.2.8"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/console@v6.2.8",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/console",
+            "versionInfo": "v6.2.8"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-bb46cfe7175d73cc",
+            "attributionTexts": [
+                "PkgID: doctrine/inflector@2.0.6"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/doctrine/inflector@2.0.6",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "doctrine/inflector",
+            "versionInfo": "2.0.6"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-bcd9bff617ffae5f",
+            "attributionTexts": [
+                "PkgID: symfony/css-selector@v6.2.7"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/css-selector@v6.2.7",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/css-selector",
+            "versionInfo": "v6.2.7"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-be284e07916e2b68",
+            "attributionTexts": [
+                "PkgID: symfony/polyfill-php80@v1.27.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/polyfill-php80@v1.27.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/polyfill-php80",
+            "versionInfo": "v1.27.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-bff88a56243c1c1d",
+            "attributionTexts": [
+                "PkgID: psr/http-factory@1.0.2"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/psr/http-factory@1.0.2",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "psr/http-factory",
+            "versionInfo": "1.0.2"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-c222fd0ecff232b6",
+            "attributionTexts": [
+                "PkgID: psr/http-client@1.0.2"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/psr/http-client@1.0.2",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "psr/http-client",
+            "versionInfo": "1.0.2"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-c9e8ee62f2abddfb",
+            "attributionTexts": [
+                "PkgID: ralouphie/getallheaders@3.0.3"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/ralouphie/getallheaders@3.0.3",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "ralouphie/getallheaders",
+            "versionInfo": "3.0.3"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-cf0478bb7217c91e",
+            "attributionTexts": [
+                "PkgID: symfony/polyfill-intl-idn@v1.27.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/polyfill-intl-idn@v1.27.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/polyfill-intl-idn",
+            "versionInfo": "v1.27.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-d1cfc559fb90bd9f",
+            "attributionTexts": [
+                "PkgID: psr/log@3.0.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/psr/log@3.0.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "psr/log",
+            "versionInfo": "3.0.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-d87c5de7651bbb56",
+            "attributionTexts": [
+                "PkgID: guzzlehttp/guzzle@7.5.1"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/guzzlehttp/guzzle@7.5.1",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "guzzlehttp/guzzle",
+            "versionInfo": "7.5.1"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-da1b5aec6c20044a",
+            "attributionTexts": [
+                "PkgID: dragonmantank/cron-expression@v3.3.2"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/dragonmantank/cron-expression@v3.3.2",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "dragonmantank/cron-expression",
+            "versionInfo": "v3.3.2"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-daa2a59aa006bc03",
+            "attributionTexts": [
+                "PkgID: guzzlehttp/uri-template@v1.0.1"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/guzzlehttp/uri-template@v1.0.1",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "guzzlehttp/uri-template",
+            "versionInfo": "v1.0.1"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-e822cd8f2a6c2989",
+            "attributionTexts": [
+                "PkgID: egulias/email-validator@4.0.1"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/egulias/email-validator@4.0.1",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "egulias/email-validator",
+            "versionInfo": "4.0.1"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-ed9ff7cd77c5ca4",
+            "attributionTexts": [
+                "PkgID: monolog/monolog@3.3.1"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/monolog/monolog@3.3.1",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "monolog/monolog",
+            "versionInfo": "3.3.1"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-f163d960c803fd3a",
+            "attributionTexts": [
+                "PkgID: psr/simple-cache@3.0.0"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/psr/simple-cache@3.0.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "psr/simple-cache",
+            "versionInfo": "3.0.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-f41ea87a01532823",
+            "attributionTexts": [
+                "PkgID: guzzlehttp/promises@1.5.2"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/guzzlehttp/promises@1.5.2",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "guzzlehttp/promises",
+            "versionInfo": "1.5.2"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-f6642c341fa5b6ef",
+            "attributionTexts": [
+                "PkgID: phpoption/phpoption@1.9.1"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/phpoption/phpoption@1.9.1",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "Apache-2.0",
+            "licenseDeclared": "Apache-2.0",
+            "name": "phpoption/phpoption",
+            "versionInfo": "1.9.1"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-fb1323f429bc605e",
+            "attributionTexts": [
+                "PkgID: symfony/uid@v6.2.7"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/uid@v6.2.7",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/uid",
+            "versionInfo": "v6.2.7"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-fe07e3c924079ed8",
+            "attributionTexts": [
+                "PkgID: symfony/process@v6.2.8"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/symfony/process@v6.2.8",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "symfony/process",
+            "versionInfo": "v6.2.8"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-ffb569ce80926467",
+            "attributionTexts": [
+                "PkgID: psr/container@2.0.2"
+            ],
+            "downloadLocation": "NONE",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:composer/psr/container@2.0.2",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "psr/container",
+            "versionInfo": "2.0.2"
+        }
+    ],
+    "files": []
+}
