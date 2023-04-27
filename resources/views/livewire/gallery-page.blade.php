@@ -3,4 +3,5 @@
     <main>
         <livewire:gallery-page.gallery />
     </main>
+    <livewire:homepage.footer />
 </div>
