@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-xs-12 col-sm-9 col-md-9">
-        <h2 class="cause-head-two">Education is Most Important by Children</h2>
+        <h1 class="cause-head-two">{{ $heading }}</h1>
         <div class="raised float-left">
             <p class="pay-label">Afflicted to : <span class="money">{{ $university }}</span></p>
         </div>
