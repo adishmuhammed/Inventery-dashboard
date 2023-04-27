@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Http\Livewire\GalleryPage;
 
 use Livewire\Component;
 
-class GalleryComponent extends Component
+class Gallery extends Component
 {
     public $images;
     public $videos;
@@ -44,7 +44,7 @@ class GalleryComponent extends Component
             $galleryItems = $this->videos;
         }
 
-        return view('livewire.gallery-component', [
+        return view('livewire.gallery-page.gallery', [
             'galleryItems' => $galleryItems,
         ]);
     }

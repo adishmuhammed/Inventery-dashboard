@@ -1,4 +1,5 @@
 <div>
+    <livewire:components.header />
     <livewire:components.page-start title="About Us" />
     <livewire:components.section leftImg="images/homepage/section1.webp"
         title='Sahayi Dialysis Center, Free dialysis helping' :paragraphs="[
@@ -22,5 +23,5 @@
     <livewire:about-page.donate-cta />
     <livewire:about-page.sliding-numbers-cta />
     <livewire:homepage.sponsers />
-    <livewire:homepage.footer />
+    <livewire:components.footer />
 </div>

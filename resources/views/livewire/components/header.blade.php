@@ -15,7 +15,7 @@
         <a class="hidden md:block no-underline text-center" href="">Contact</a>
         <button class="hidden md:block bg-yellow-500 p-2 rounded text-center"> Donate Now</button>
         <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden block">
-            <i class="fas fa-bars text-white"></i>
+            <i class="fa fa-bars text-black"></i>
         </button>
 
     </nav>

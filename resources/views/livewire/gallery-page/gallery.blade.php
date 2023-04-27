@@ -8,7 +8,8 @@
         @foreach ($galleryItems as $item)
             <div>
                 @if (strpos($item['url'], 'youtube') !== false)
-                    <iframe width="100%" height="300" src="{{ $item['url'] }}" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="100%" height="300" src="{{ $item['url'] }}" frameborder="0"
+                        allowfullscreen></iframe>
                 @else
                     <img src="{{ $item['url'] }}" width="100%" alt="{{ $item['category'] }}">
                 @endif

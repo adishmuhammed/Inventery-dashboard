@@ -1,7 +1,8 @@
 <div>
-    <livewire:components.page-start />
+    <livewire:components.header />
+    <livewire:components.page-start title="Gallery" />
     <main>
         <livewire:gallery-page.gallery />
     </main>
-    <livewire:homepage.footer />
+    <livewire:components.footer />
 </div>
