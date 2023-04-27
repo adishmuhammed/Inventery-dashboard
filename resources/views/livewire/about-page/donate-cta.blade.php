@@ -1,8 +1,8 @@
 <div class="about-part padt padno">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-6 order-2 order-lg-1">
-                <img src="image/about-img.jpg" alt="about-img">
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-6 order-2 order-lg-1 flex flex-col justify-end">
+                <img src="{{ asset('images/about-page/good-doctor.webp') }}" alt="about-img">
             </div>
             <div class="col-md-12 col-sm-12 col-xs-12 col-lg-6 about-detail order-1 order-lg-1">
                 <h3 class="section-title">Donate and Save Lives with<br>Sahayi Dialysis <span
