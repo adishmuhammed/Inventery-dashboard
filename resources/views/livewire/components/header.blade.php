@@ -1,17 +1,17 @@
-<header class="absolute z-20 w-full">
+<header class="relative z-20 w-full bg-gradient-to-r">
     <nav class="flex md:justify-center justify-around gap-6 items-center p-3" x-data="{ mobileMenuOpen: @entangle('mobileMenuOpen') }">
         <div class="flex items-center gap-3">
             <img class="w-12 bg-white rounded-full" src="{{ asset('images/logo.webp') }}" alt="">
-            <h3 class="text-white">Sahayi Dialysis Center</h3>
+            <h3 class="">Sahayi Dialysis Center</h3>
         </div>
-        <a class="hidden md:block no-underline text-white text-center" href="">Home</a>
-        <a class="hidden md:block no-underline text-white text-center" href="{{ route('about') }}">About</a>
+        <a class="hidden md:block no-underline text-center" href="">Home</a>
+        <a class="hidden md:block no-underline text-center" href="{{ route('about') }}">About</a>
         <div class="hidden md:block">
             <livewire:small-components.dropdown-menu :items="['Diploma in Dialysis Technology', 'Lab Technician']" heading="Courses" />
         </div>
-        <a class="hidden md:block no-underline text-white text-center" href="">Gallery</a>
-        <a class="hidden md:block no-underline text-white text-center" href="">Blog</a>
-        <a class="hidden md:block no-underline text-white text-center" href="">Contact</a>
+        <a class="hidden md:block no-underline text-center" href="">Gallery</a>
+        <a class="hidden md:block no-underline text-center" href="">Blog</a>
+        <a class="hidden md:block no-underline text-center" href="">Contact</a>
         <button class="hidden md:block bg-yellow-500 p-2 rounded text-center"> Donate Now</button>
         <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden block">
             <i class="fas fa-bars text-white"></i>

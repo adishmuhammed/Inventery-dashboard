@@ -5,7 +5,7 @@ if($hidden){
         echo 'relative';
     } @endphp"
     x-data="{ open: @entangle('isOpen') }">
-    <button @click="open = !open" class=" text-white px-4 py-2 rounded">
+    <button @click="open = !open" class=" text-black py-2 rounded">
         {{ $heading }}
     </button>
     <div x-show="open" @click.away="open = false"
