@@ -17,7 +17,7 @@ if($fullWidth){
         } @endphp bg-white rounded shadow-md">
         <ul class="text-gray-700">
             @foreach ($items as $item)
-                <li class="px-4 py-2 hover:bg-gray-200">{{ $item }} </li>
+                <li class="px-4 py-2 hover:bg-gray-200"><a href="">{{ $item }}</a> </li>
             @endforeach
         </ul>
     </div>
