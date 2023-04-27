@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\AboutPage;
 use App\Http\Livewire\Homepage;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +20,5 @@ use App\Http\Controllers\BlogController;
 
 
 Route::get('/', Homepage::class)->name('home');
+
+Route::get('/about', AboutPage::class)->name('about');
