@@ -26,20 +26,22 @@
 
     </nav>
     <div x-data="{ mobileInnerSubMenuOpen: @entangle('mobileInnerSubMenuOpen') }" x-show="mobileMenuOpen" @click.away="mobileMenuOpen = false"
-        class="bg-white rounded-xl border absolute w-screen scale-95 -m-2 text-center">
-        <a class="py-3 border-t border-b no-underline block" href="{{ route('home') }}">Home</a>
-        <a class="py-3 border-t border-b no-underline block" href="{{ route('about') }}">About</a>
-        <button class="py-3 border-t border-b no-underline block w-full hover:text-red-500"
-            @click="mobileInnerSubMenuOpen = !mobileInnerSubMenuOpen">
-            Cources
-        </button>
-        <div x-show="mobileInnerSubMenuOpen" @click.away="mobileInnerSubMenuOpen = false" class="text-gray-400">
-            <a class="py-3 border-t border-b no-underline block" href="{{ route('ddt') }}">Diploma in Dialysis
-                Technology</a>
-            <a class="py-3 border-t border-b no-underline block" href="{{ route('lab-tech') }}">Lab Technician</a>
+        class="flex justify-center">
+        <div class="bg-white rounded-xl border absolute w-screen scale-95 -m-2 text-center">
+            <a class="py-3 border-t border-b no-underline block" href="{{ route('home') }}">Home</a>
+            <a class="py-3 border-t border-b no-underline block" href="{{ route('about') }}">About</a>
+            <button class="py-3 border-t border-b no-underline block w-full hover:text-red-500"
+                @click="mobileInnerSubMenuOpen = !mobileInnerSubMenuOpen">
+                Cources
+            </button>
+            <div x-show="mobileInnerSubMenuOpen" @click.away="mobileInnerSubMenuOpen = false" class="text-gray-400">
+                <a class="py-3 border-t border-b no-underline block" href="{{ route('ddt') }}">Diploma in Dialysis
+                    Technology</a>
+                <a class="py-3 border-t border-b no-underline block" href="{{ route('lab-tech') }}">Lab Technician</a>
+            </div>
+            <a class="py-3 border-t border-b no-underline block" href="{{ route('gallery') }}">Gallery</a>
+            <a class="py-3 border-t border-b no-underline block" href="">Blog</a>
+            <a class="py-3 border-t border-b no-underline block" href="">Contact</a>
         </div>
-        <a class="py-3 border-t border-b no-underline block" href="{{ route('gallery') }}">Gallery</a>
-        <a class="py-3 border-t border-b no-underline block" href="">Blog</a>
-        <a class="py-3 border-t border-b no-underline block" href="">Contact</a>
     </div>
 </header>
