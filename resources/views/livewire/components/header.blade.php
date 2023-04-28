@@ -6,7 +6,7 @@
         </div>
         <a class="hidden md:block no-underline text-center" href="{{ route('home') }}">Home</a>
         <a class="hidden md:block no-underline text-center" href="{{ route('about') }}">About</a>
-        <button @click="open = !open" class=" text-black py-2 rounded hidden md:block">
+        <button @click="open = !open" class=" text-black hover:text-red-400 py-2 rounded hidden md:block">
             Courses
         </button>
         <div x-show="open" @click.away="open = false" class="absolute top-20 mt-2 w-48 bg-white rounded shadow-md">
