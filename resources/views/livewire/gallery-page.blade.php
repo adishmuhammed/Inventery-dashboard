@@ -1,7 +1,7 @@
 <div>
     <livewire:components.header />
     <livewire:components.page-start title="Gallery" />
-    <main>
+    <main class="container">
         <livewire:gallery-page.gallery />
     </main>
     <livewire:components.footer />
