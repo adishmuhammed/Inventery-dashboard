@@ -12,7 +12,7 @@ class BlogController extends Controller
 {
     public function index()
     {
-        return view('blogs')->with('blogs', Blogs::paginate(12));
+        //
     }
 
     public function store(Request $request)
@@ -28,6 +28,7 @@ class BlogController extends Controller
         $name = Str::random(5) . '.' . $image->getClientOriginalExtension();
         $path = $image->storeAs('public/images', $name);
 
+        $content = 
 
         // fill blog model with request
         $blog = new Blogs();
@@ -43,18 +44,6 @@ class BlogController extends Controller
 
     public function show(Blogs $blog)
     {
-        $tags = explode(",", $blog->blog_tags);
-        // make $tags a list consisted of words inside $tags separated by ',' comma
-
-        $timestamp = $blog->created_at;
-
-        // Convert the timestamp to a Carbon instance
-        $date = Carbon::parse($timestamp);
-
-        // Format the date in the desired format
-        $formattedDate = $date->format('d M, Y');
-
-        return view('single_blog', compact('blog', 'tags', 'formattedDate'));
     }
 
 

@@ -3,6 +3,6 @@
     <livewire:components.page-start title="Blogs" />
     <main class="container">
         <livewire:components.card />
-    </main>
+    </main> 
     <livewire:components.footer />
 </div>
