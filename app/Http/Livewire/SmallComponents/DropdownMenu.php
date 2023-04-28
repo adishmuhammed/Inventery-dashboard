@@ -8,6 +8,7 @@ class DropdownMenu extends Component
 {
     public $isOpen = false;
     public $items = [];
+    public $links = [];
     public $heading = 'Dropdown Menu';
     public bool $fullWidth = false;
     public bool $hidden = false;

@@ -26,27 +26,9 @@
                             <div class="form-group float-left">
                                 <label for="Select1">I Want to Donate for</label>
                                 <select class="form-control" id="Select1">
-                                    <option>Educate Children</option>
-                                    <option>Healthy Food</option>
-                                    <option>Water</option>
-                                    <option>Home</option>
+                                    <option>Dialysis</option>
+                                    <option>Medicine</option>
                                     <option>Other</option>
-                                </select>
-                            </div>
-                            <div class="form-group float-left">
-                                <label for="Select2">Currency</label>
-                                <select class="form-control" id="Select2">
-                                    <option>USD - U.S. Dollars</option>
-                                    <option>INR - Indian Rupee</option>
-                                    <option>AUD - Australian Dollars</option>
-                                    <option>BRL - Brazilian Reais</option>
-                                    <option>GBP - British Pounds</option>
-                                    <option>HKD - Hong Kong Dollars</option>
-                                    <option>HUF - Hungarian Forints</option>
-                                    <option>INR - Indian Rupee</option>
-                                    <option>ILS - Israeli New Shekels</option>
-                                    <option>JPY - Japanese Yen</option>
-                                    <option>MYR - Malaysian Ringgit</option>
                                 </select>
                             </div>
                         </form>
@@ -56,27 +38,27 @@
                             <label class="head-label mb-0">How much do you want to donate?</label>
                         </div>
                         <div class="form-check float-left">
-                            <input class="form-check-input" type="radio" name="Radio" id="Radio1">
+                            <input class="form-check-input" type="radio" name="Radio" id="Radio1" value="20">
                             <label class="form-check-label" for="Radio1">$20</label>
                         </div>
                         <div class="form-check float-left">
-                            <input class="form-check-input" type="radio" name="Radio" id="Radio2">
+                            <input class="form-check-input" type="radio" name="Radio" id="Radio2" value="50">
                             <label class="form-check-label" for="Radio2">$50</label>
                         </div>
                         <div class="form-check float-left">
-                            <input class="form-check-input" type="radio" name="Radio" id="Radio3">
+                            <input class="form-check-input" type="radio" name="Radio" id="Radio3" value="100">
                             <label class="form-check-label" for="Radio3">$100</label>
                         </div>
                         <div class="form-check float-left">
-                            <input class="form-check-input" type="radio" name="Radio" id="Radio4">
+                            <input class="form-check-input" type="radio" name="Radio" id="Radio4" value="200">
                             <label class="form-check-label" for="Radio4">$200</label>
                         </div>
                         <div class="form-check float-left">
-                            <input class="form-check-input" type="radio" name="Radio" id="Radio5">
+                            <input class="form-check-input" type="radio" name="Radio" id="Radio5" value="500">
                             <label class="form-check-label" for="Radio5">$500</label>
                         </div>
                         <div class="form-check float-left">
-                            <input class="form-check-input" type="radio" name="Radio" id="Radio6">
+                            <input class="form-check-input" type="radio" name="Radio" id="Radio6" value="other">
                             <label class="form-check-label" for="Radio6">Other Amount</label>
                         </div>
                     </div>
