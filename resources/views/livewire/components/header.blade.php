@@ -1,8 +1,8 @@
 <header class="relative z-20 w-full bg-gradient-to-r" x-data="{ mobileMenuOpen: @entangle('mobileMenuOpen') }">
     <nav class="flex md:justify-center justify-around gap-6 items-center p-3" x-data="{ open: @entangle('isOpen') }">
-        <div class="flex items-center gap-3">
-            <img class="w-12 bg-white rounded-full" src="{{ asset('images/logo.webp') }}" alt="">
-            <h3 class="">Sahayi Dialysis Center</h3>
+        <div class="flex items-center gap-3 pl-3">
+            <img class="w-8 bg-white rounded-full" src="{{ asset('images/logo.webp') }}" alt="">
+            <h3 class="capitalize">Sahayi Dialysis Center</h3>
         </div>
         <a class="hidden md:block no-underline text-center" href="{{ route('home') }}">Home</a>
         <a class="hidden md:block no-underline text-center" href="{{ route('about') }}">About</a>
