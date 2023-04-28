@@ -23,7 +23,6 @@
         <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden block">
             <i class="fa fa-bars text-black"></i>
         </button>
-
     </nav>
     <div x-data="{ mobileInnerSubMenuOpen: @entangle('mobileInnerSubMenuOpen') }" x-show="mobileMenuOpen" @click.away="mobileMenuOpen = false"
         class="flex justify-center">
