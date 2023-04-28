@@ -10,6 +10,10 @@ class Gallery extends Component
     public $videos;
     public $filter;
 
+    public $allButton = "active";
+    public $imagesButton = "";
+    public $videosButton = "";
+
     public function mount()
     {
         // Fetch images and videos from database or external source
@@ -38,10 +42,19 @@ class Gallery extends Component
 
         if ($this->filter == 'all') {
             $galleryItems = array_merge($this->images, $this->videos);
+            $this->allButton = "active";
+            $this->imagesButton = "";
+            $this->videosButton = "";
         } elseif ($this->filter == 'images') {
             $galleryItems = $this->images;
+            $this->allButton = "";
+            $this->imagesButton = "active";
+            $this->videosButton = "";
         } elseif ($this->filter == 'videos') {
             $galleryItems = $this->videos;
+            $this->allButton = "";
+            $this->imagesButton = "";
+            $this->videosButton = "active";
         }
 
         return view('livewire.gallery-page.gallery', [
