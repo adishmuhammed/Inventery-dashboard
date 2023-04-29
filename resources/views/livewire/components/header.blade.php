@@ -1,28 +1,30 @@
 <header class="relative z-20 w-full bg-gradient-to-r" x-data="{ mobileMenuOpen: @entangle('mobileMenuOpen') }">
-    <nav class="flex md:justify-center justify-around gap-6 items-center p-3" x-data="{ open: @entangle('isOpen') }">
+    <nav class="flex md:justify-between justify-around gap-6 items-center p-3" x-data="{ open: @entangle('isOpen') }">
         <div class="flex items-center gap-3 pl-3">
             <img class="w-8 bg-white rounded-full" src="{{ asset('images/logo.webp') }}" alt="">
             <h3 class="capitalize">Sahayi Dialysis Center</h3>
         </div>
-        <a class="hidden md:block no-underline text-center" href="{{ route('home') }}">Home</a>
-        <a class="hidden md:block no-underline text-center" href="{{ route('about') }}">About</a>
-        <button @click="open = !open" class=" text-black hover:text-red-400 py-2 rounded hidden md:block">
-            Courses
-        </button>
-        <div x-show="open" @click.away="open = false" class="absolute top-20 mt-2 w-48 bg-white rounded shadow-md">
-            <ul class="text-gray-700">
-                <li class="px-4 py-2 hover:bg-gray-200"><a href="{{ route('ddt') }}">Diploma in Dialysis
-                        Technology</a></li>
-                <li class="px-4 py-2 hover:bg-gray-200"><a href="{{ route('lab-tech') }}">Lab Technician</a></li>
-            </ul>
+        <div class="flex md:justify-end justify-around gap-6 items-center p-3">
+            <a class="hidden md:block no-underline text-center" href="{{ route('home') }}">Home</a>
+            <a class="hidden md:block no-underline text-center" href="{{ route('about') }}">About</a>
+            <button @click="open = !open" class=" text-black hover:text-red-400 py-2 rounded hidden md:block">
+                Courses
+            </button>
+            <div x-show="open" @click.away="open = false" class="absolute top-20 mt-2 w-48 bg-white rounded shadow-md">
+                <ul class="text-gray-700">
+                    <li class="px-4 py-2 hover:bg-gray-200"><a href="{{ route('ddt') }}">Diploma in Dialysis
+                            Technology</a></li>
+                    <li class="px-4 py-2 hover:bg-gray-200"><a href="{{ route('lab-tech') }}">Lab Technician</a></li>
+                </ul>
+            </div>
+            <a class="hidden md:block no-underline text-center" href="{{ route('gallery') }}">Gallery</a>
+            <a class="hidden md:block no-underline text-center" href="{{ route('blog') }}">Blog</a>
+            <a class="hidden md:block no-underline text-center" href="">Contact</a>
+            <button class="hidden md:block bg-yellow-500 p-2 rounded text-center"> Donate Now</button>
+            <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden block">
+                <i class="fa fa-bars text-black"></i>
+            </button>
         </div>
-        <a class="hidden md:block no-underline text-center" href="{{ route('gallery') }}">Gallery</a>
-        <a class="hidden md:block no-underline text-center" href="{{ route('blog') }}">Blog</a>
-        <a class="hidden md:block no-underline text-center" href="">Contact</a>
-        <button class="hidden md:block bg-yellow-500 p-2 rounded text-center"> Donate Now</button>
-        <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden block">
-            <i class="fa fa-bars text-black"></i>
-        </button>
     </nav>
     <div x-data="{ mobileInnerSubMenuOpen: @entangle('mobileInnerSubMenuOpen') }" x-show="mobileMenuOpen" @click.away="mobileMenuOpen = false"
         class="flex justify-center">
