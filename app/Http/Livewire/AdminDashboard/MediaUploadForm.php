@@ -13,13 +13,12 @@ class MediaUploadForm extends Component
 
     public $imageSelected = false;
     public $videoSelected = false;
-    
+
     protected $rules = [
         'image' => 'required|image|max:526',
-        '$video' => 'required',
-        '$blog_tags' => 'required'
+        '$video' => 'required'
     ];
- 
+
 
     public function updated($propertyName)
     {
@@ -33,9 +32,22 @@ class MediaUploadForm extends Component
 
     public function uploadMedia()
     {
-        if ($this->imageSelected) 
-        {
-            
+        $gallery = new Gallery;
+
+        if ($this->imageSelected) {
+            $gallery->image = $this->image;
+        } elseif ($this->videoSelected) {
+            $gallery->video = $this->video;
+        } else {
+            return redirect()->back();
         }
+
+
+        $gallery->type = $this->type;
+        $gallery->info = $this->info;
+
+        $gallery->save();
+
+        return redirect()->route('home');
     }
 }
