@@ -6,9 +6,9 @@ use Livewire\Component;
 
 class AdminDashboard extends Component
 {
-    public  $message;
-    public $blog;
-    public $gallery;
+    public  $message =true;
+    public $blog = false;
+    public $gallery =false;
     public $contactMessages;
     public $galleryImages;
     public $galleryVideos;

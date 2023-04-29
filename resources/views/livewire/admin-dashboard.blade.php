@@ -42,15 +42,14 @@
                         <td>{{ $posts->blog_title }}</td>
                         <td>{{ $posts->blog_content }}</td>
                         <td>{{ $posts->blog_tags }}</td>
-                        <td x-data="{open:}">
+                        <td x-data="{open:false}">
                             <button @click="open = !open" class=" text-black hover:text-red-400 py-2 rounded hidden md:block">
                                 Courses
                             </button>
                             <div x-show="open" @click.away="open = false" class="absolute top-20 mt-2 w-48 bg-white rounded shadow-md">
                                 <ul class="text-gray-700">
-                                    <li class="px-4 py-2 hover:bg-gray-200"><a href="{{ route('ddt') }}">Diploma in Dialysis
-                                            Technology</a></li>
-                                    <li class="px-4 py-2 hover:bg-gray-200"><a href="{{ route('lab-tech') }}">Lab Technician</a></li>
+                                    <li class="px-4 py-2 hover:bg-gray-200"><a href="{{ route('ddt') }}">Edit</a></li>
+                                    <li class="px-4 py-2 hover:bg-gray-200"><a href="{{ route('lab-tech') }}">Delete</a></li>
                                 </ul>
                             </div>
                         </td>
@@ -61,6 +60,33 @@
     </div>
     <div x-show="openGallery"
         class="p border rounded-lg pt-16 pb-16 bg-gradient-to-b from-slate-300 via-slate-50 to-slate-300">
-        <div class="border p-6"></div>
+        <div class="border p-6">
+            <table class="border rounded-md shadow-xl">
+                <tr class="bg-pink-300">
+                    <th>No</th>
+                    <th>Media</th>
+                    <th>Info</th>
+                    <th>Action</th>
+                </tr>
+                @foreach ($blogPosts as $posts)
+                    <tr>
+                        <td></td>
+                        <td>{{ $posts->blog_title }}</td>
+                        <td>{{ $posts->blog_tags }}</td>
+                        <td x-data="{open:false}">
+                            <button @click="open = !open" class=" text-black hover:text-red-400 py-2 rounded hidden md:block">
+                                Courses
+                            </button>
+                            <div x-show="open" @click.away="open = false" class="absolute top-20 mt-2 w-48 bg-white rounded shadow-md">
+                                <ul class="text-gray-700">
+                                    <li class="px-4 py-2 hover:bg-gray-200"><a href="{{ route('ddt') }}">Edit</a></li>
+                                    <li class="px-4 py-2 hover:bg-gray-200"><a href="{{ route('lab-tech') }}">Delete</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                @endforeach
+            </table>
+        </div>
     </div>
 </div>
