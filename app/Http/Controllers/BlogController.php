@@ -44,8 +44,32 @@ class BlogController extends Controller
     {
     }
 
+    public function update(Request $request, Blogs $blog)
+    {
+        $request->validate([
+            'blog_title' => 'required',
+            'blog_image' => 'required',
+            'blog_content' => 'required',
+            'blog_tags' => 'required'
+        ]);
 
-    //destroy
+        $image = $request->file('blog_image');
+        $name = Str::random(5) . '.' . $image->getClientOriginalExtension();
+        $path = $image->storeAs('public/images', $name);
+
+        $blog->update(
+            [
+                'blog_title' => $request->blog_title,
+                'blog_image' => $path,
+                'blog_content' => $request->blog_content,
+                'blog_tags' => $request->blog_tags
+            ]
+        );
+
+        return redirect()->route('products.create')->with('success', 'Blog created successfully.');
+
+    }
+
     public function destroy(Blogs $blog)
     {
         $blog->delete();
