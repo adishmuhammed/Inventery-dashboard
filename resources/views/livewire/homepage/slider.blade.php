@@ -7,7 +7,7 @@
                         <img src="{{ asset('/images/homepage/slider1.webp') }}" alt="homepagebanner">
                     </a>
                     <div class="banner1-detail text-bg">
-                        <h1 class="banner-head-one">Free Dialysis</h1>
+                        <h1 class="banner-head-one">Free Dialysis For Needy People</h1>
                         <span class="banner-span d-none d-md-block">Help hand in hand with those suffering in kidney
                             failures</span>
                         <a href="{{ url(' #') }}" class="donate">DONATE NOW</a>
