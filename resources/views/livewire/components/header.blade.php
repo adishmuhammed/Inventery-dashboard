@@ -17,7 +17,7 @@
             </ul>
         </div>
         <a class="hidden md:block no-underline text-center" href="{{ route('gallery') }}">Gallery</a>
-        <a class="hidden md:block no-underline text-center" href="">Blog</a>
+        <a class="hidden md:block no-underline text-center" href="{{ route('blog') }}">Blog</a>
         <a class="hidden md:block no-underline text-center" href="">Contact</a>
         <button class="hidden md:block bg-yellow-500 p-2 rounded text-center"> Donate Now</button>
         <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden block">
