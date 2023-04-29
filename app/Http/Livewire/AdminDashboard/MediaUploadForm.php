@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire\AdminDashboard;
 
+use App\Models\Gallery;
 use Livewire\Component;
 
 class MediaUploadForm extends Component
