@@ -11,7 +11,7 @@
             </div>
             <div class="col-xs-12 col-md-4 p-0">
                 <div class="service-inner bg-col2">
-                    <img src="images/Icons/google-pay.svg" height="82" alt="service-img">
+                    <img src="{{ asset('images/Icons/google-pay.svg') }}" height="82" alt="service-img">
                     <h2 class="heading-two">Google Pay</h2>
                     <p class="service-p"><a href="upi://pay?pa=9656711325">9656711325</a></p>
                 </div>
