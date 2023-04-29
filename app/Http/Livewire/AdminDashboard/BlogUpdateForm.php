@@ -35,6 +35,11 @@ class BlogUpdateForm extends Component
     {
         $this->validateOnly($propertyName);
     }
+
+    public function render()
+    {
+        return view('livewire.admin-dashboard.blog-update-form');
+    }
  
     public function updateBlog()
     {
