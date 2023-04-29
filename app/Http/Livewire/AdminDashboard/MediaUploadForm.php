@@ -42,7 +42,6 @@ class MediaUploadForm extends Component
             return redirect()->back();
         }
 
-
         $gallery->type = $this->type;
         $gallery->info = $this->info;
 
