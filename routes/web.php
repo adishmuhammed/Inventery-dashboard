@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Livewire\AboutPage;
+use App\Http\Livewire\BlogsPage;
 use App\Http\Livewire\DiplomaInDialysisTechnology;
 use App\Http\Livewire\GalleryPage;
 use App\Http\Livewire\Homepage;
@@ -33,3 +34,5 @@ Route::get('/diploma-in-dialysis-technology', DiplomaInDialysisTechnology::class
 Route::get('/lab-technician', LabTechnician::class)->name('lab-tech');
 
 Route::get('/gallery', GalleryPage::class)->name('gallery');
+
+Route::get('/blog', BlogsPage::class)->name('blog');
