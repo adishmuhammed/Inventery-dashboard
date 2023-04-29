@@ -3,7 +3,6 @@
 namespace App\Http\Livewire\Homepage;
 
 use Livewire\Component;
-use App\Models\Blog;
 use Livewire\WithPagination;
 
 class Blogs extends Component
@@ -13,7 +12,7 @@ class Blogs extends Component
 
     public function mount()
     {
-        $this->blogs = Blog::orderBy('created_at', 'desc')
+        $this->blogs = \App\Models\Blogs::orderBy('created_at', 'desc')
             ->take(3)
             ->get();
     }
