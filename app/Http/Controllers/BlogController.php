@@ -28,8 +28,6 @@ class BlogController extends Controller
         $name = Str::random(5) . '.' . $image->getClientOriginalExtension();
         $path = $image->storeAs('public/images', $name);
 
-        $content = 
-
         // fill blog model with request
         $blog = new Blogs();
         $blog->blog_title = $request->blog_title;

@@ -8,9 +8,9 @@
                 you.</p>
         </div>
         <div class="grid xl:grid-cols-3 place-items-center gap-3">
-            <livewire:components.card />
-            <livewire:components.card />
-            <livewire:components.card />
+            @foreach ($blogs as $blog)
+                <livewire:components.card :blog="$blog" />
+            @endforeach
         </div>
     </div>
 </div>
