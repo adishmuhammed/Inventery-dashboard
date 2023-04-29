@@ -27,8 +27,36 @@
     </div>
     <div x-show="openBlog"
         class="p border rounded-lg pt-16 pb-16 bg-gradient-to-b from-slate-300 via-slate-50 to-slate-300">
-        <div class="border p-6">
-            
+        <div class="border p-6 text-center">
+            <table class="border rounded-md shadow-xl">
+                <tr class="bg-pink-300">
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Short Content</th>
+                    <th>Tags</th>
+                    <th>Action</th>
+                </tr>
+                @foreach ($blogPosts as $posts)
+                    <tr>
+                        <td>{{ $posts->id }}</td>
+                        <td>{{ $posts->blog_title }}</td>
+                        <td>{{ $posts->blog_content }}</td>
+                        <td>{{ $posts->blog_tags }}</td>
+                        <td x-data="{open:}">
+                            <button @click="open = !open" class=" text-black hover:text-red-400 py-2 rounded hidden md:block">
+                                Courses
+                            </button>
+                            <div x-show="open" @click.away="open = false" class="absolute top-20 mt-2 w-48 bg-white rounded shadow-md">
+                                <ul class="text-gray-700">
+                                    <li class="px-4 py-2 hover:bg-gray-200"><a href="{{ route('ddt') }}">Diploma in Dialysis
+                                            Technology</a></li>
+                                    <li class="px-4 py-2 hover:bg-gray-200"><a href="{{ route('lab-tech') }}">Lab Technician</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                @endforeach
+            </table>
         </div>
     </div>
     <div x-show="openGallery"

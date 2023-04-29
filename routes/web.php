@@ -40,6 +40,6 @@ Route::get('/blog', BlogsPage::class)->name('blog');
 
 Route::get('/login', LoginPage::class)->name('login');
 
-Route::group(['middleware' => 'auth'],[
-    Route::get('/dashboard', AdminDashboard::class)->name('admin')
-]);
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard', AdminDashboard::class)->name('admin');
+});
