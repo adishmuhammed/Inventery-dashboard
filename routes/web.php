@@ -1,12 +1,13 @@
 <?php
 
 use App\Http\Livewire\AboutPage;
+use App\Http\Livewire\AdminDashboard;
 use App\Http\Livewire\BlogsPage;
 use App\Http\Livewire\DiplomaInDialysisTechnology;
 use App\Http\Livewire\GalleryPage;
 use App\Http\Livewire\Homepage;
-use App\Http\Livewire\Homepage\Gallery;
 use App\Http\Livewire\LabTechnician;
+use App\Http\Livewire\LoginPage;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ProductsController;
@@ -36,3 +37,9 @@ Route::get('/lab-technician', LabTechnician::class)->name('lab-tech');
 Route::get('/gallery', GalleryPage::class)->name('gallery');
 
 Route::get('/blog', BlogsPage::class)->name('blog');
+
+Route::get('/login', LoginPage::class)->name('login');
+
+Route::group(['middleware' => 'auth'],[
+    Route::get('/dashboard', AdminDashboard::class)->name('admin')
+]);
