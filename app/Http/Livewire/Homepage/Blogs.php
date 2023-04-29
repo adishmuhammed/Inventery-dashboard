@@ -7,7 +7,6 @@ use Livewire\WithPagination;
 
 class Blogs extends Component
 {
-    use WithPagination;
     public $blogs;
 
     public function mount()
@@ -19,6 +18,6 @@ class Blogs extends Component
 
     public function render()
     {
-        return view('livewire.homepage.blogs', compact('blogs'));
+        return view('livewire.homepage.blogs');
     }
 }
