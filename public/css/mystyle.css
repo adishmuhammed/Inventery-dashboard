@@ -4,17 +4,6 @@
     border-radius: 50%;
 }
 
-/* slider */
-/* Heading */
-.owl-stage .item h1 {
-    text-shadow: rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
-}
-
-/* Span Tag */
-.owl-stage .item span {
-    text-shadow: rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
-}
-
 /* footer */
 /* Boxed footer icon */
 .footer-part .boxed-footer-icon {
