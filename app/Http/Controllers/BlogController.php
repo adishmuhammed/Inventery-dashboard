@@ -15,7 +15,7 @@ class BlogController extends Controller
         //
     }
 
-    public function store(Request $request)
+    public function store(array $request)
     {
         $request->validate([
             'blog_title' => 'required',

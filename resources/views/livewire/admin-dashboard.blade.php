@@ -28,6 +28,9 @@
     <div x-show="openBlog"
         class="p border rounded-lg pt-16 pb-16 bg-gradient-to-b from-slate-300 via-slate-50 to-slate-300">
         <div class="border p-6 text-center">
+            <div class="flex justify-center">
+                <a href="{{ route() }}">Create New Blog</a>
+            </div>
             <table class="border rounded-md shadow-xl">
                 <tr class="bg-pink-300">
                     <th>No</th>
