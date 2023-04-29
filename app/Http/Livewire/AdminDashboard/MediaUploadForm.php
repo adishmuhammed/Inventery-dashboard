@@ -36,10 +36,9 @@ class MediaUploadForm extends Component
 
         if ($this->imageSelected) {
             $gallery->image = $this->image;
-        } elseif ($this->videoSelected) {
+        } 
+        if ($this->videoSelected) {
             $gallery->video = $this->video;
-        } else {
-            return redirect()->back();
         }
 
         $gallery->type = $this->type;
