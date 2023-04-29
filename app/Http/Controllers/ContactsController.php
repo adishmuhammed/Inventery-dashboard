@@ -26,7 +26,7 @@ class ContactsController extends Controller
 
         Contacts::create($validated);
 
-        return redirect()->route('contact')
+        return redirect()->route('contact');
     }
 
     /**
