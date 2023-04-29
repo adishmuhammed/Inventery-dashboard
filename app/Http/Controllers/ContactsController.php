@@ -15,43 +15,18 @@ class ContactsController extends Controller
         //
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
-    }
+        $validated = $request->validate([
+            'full_name' => 'required',
+            'email' => 'required',
+            'subject' => 'required',
+            'message' => 'required'
+        ]);
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(Contacts $contacts)
-    {
-        //
-    }
+        Contacts::create($validated);
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Contacts $contacts)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Contacts $contacts)
-    {
-        //
+        return redirect()->route('contact')
     }
 
     /**
