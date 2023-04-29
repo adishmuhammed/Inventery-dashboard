@@ -42,14 +42,17 @@
                         <td>{{ $posts->blog_title }}</td>
                         <td>{{ $posts->blog_content }}</td>
                         <td>{{ $posts->blog_tags }}</td>
-                        <td x-data="{open:false}">
-                            <button @click="open = !open" class=" text-black hover:text-red-400 py-2 rounded hidden md:block">
+                        <td x-data="{ open: false }">
+                            <button @click="open = !open"
+                                class=" text-black hover:text-red-400 py-2 rounded hidden md:block">
                                 Courses
                             </button>
-                            <div x-show="open" @click.away="open = false" class="absolute top-20 mt-2 w-48 bg-white rounded shadow-md">
+                            <div x-show="open" @click.away="open = false"
+                                class="absolute top-20 mt-2 w-48 bg-white rounded shadow-md">
                                 <ul class="text-gray-700">
                                     <li class="px-4 py-2 hover:bg-gray-200"><a href="{{ route('ddt') }}">Edit</a></li>
-                                    <li class="px-4 py-2 hover:bg-gray-200"><a href="{{ route('lab-tech') }}">Delete</a></li>
+                                    <li class="px-4 py-2 hover:bg-gray-200"><a
+                                            href="{{ route('lab-tech') }}">Delete</a></li>
                                 </ul>
                             </div>
                         </td>
@@ -68,19 +71,27 @@
                     <th>Info</th>
                     <th>Action</th>
                 </tr>
-                @foreach ($blogPosts as $posts)
+                @foreach ($galleryMedias as $media)
                     <tr>
-                        <td></td>
-                        <td>{{ $posts->blog_title }}</td>
-                        <td>{{ $posts->blog_tags }}</td>
-                        <td x-data="{open:false}">
-                            <button @click="open = !open" class=" text-black hover:text-red-400 py-2 rounded hidden md:block">
-                                Courses
+                        <td>
+                            @if ($media->type == 'image')
+                                <img class="object-scale-down" src="{{ asset($media->image) }}" alt="">
+                            @else
+                                <video src="{{ asset($media->video) }}">Can't Play The Video</video>
+                            @endif
+                        </td>
+                        <td>{{ $media->info }}</td>
+                        <td x-data="{ open: false }">
+                            <button @click="open = !open"
+                                class=" text-black hover:text-red-400 py-2 rounded hidden md:block border">
+                                Actions
                             </button>
-                            <div x-show="open" @click.away="open = false" class="absolute top-20 mt-2 w-48 bg-white rounded shadow-md">
+                            <div x-show="open" @click.away="open = false"
+                                class="absolute top-20 mt-2 w-48 bg-white rounded shadow-md">
                                 <ul class="text-gray-700">
                                     <li class="px-4 py-2 hover:bg-gray-200"><a href="{{ route('ddt') }}">Edit</a></li>
-                                    <li class="px-4 py-2 hover:bg-gray-200"><a href="{{ route('lab-tech') }}">Delete</a></li>
+                                    <li class="px-4 py-2 hover:bg-gray-200"><a
+                                            href="{{ route('lab-tech') }}">Delete</a></li>
                                 </ul>
                             </div>
                         </td>

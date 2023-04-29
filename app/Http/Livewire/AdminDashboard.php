@@ -10,8 +10,7 @@ class AdminDashboard extends Component
     public $blog = false;
     public $gallery =false;
     public $contactMessages;
-    public $galleryImages;
-    public $galleryVideos;
+    public $galleryMedias;
     public $blogPosts;
     public function render()
     {
