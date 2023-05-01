@@ -13,6 +13,15 @@
     transform: translatex(0px) translatey(0px);
 }
 
+.banner1-img>a>img {
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.banner1-img {
+    background: black;
+}
+
 /* Image */
 .boxed-footer-icon a img {
     margin-right: 10px;
